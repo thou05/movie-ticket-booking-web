@@ -6,9 +6,7 @@ let json_url = "/json/movie.json";
 fetch(json_url)
     .then(response => response.json())
     .then((data) => {
-        // Tìm kiếm và tải dữ liệu
         data.forEach(element => {
-            // Duyệt qua từng phần tử và lấy thông tin
             let { Title, Rated, Released, Poster, Genre, url } = element;
             let card = document.createElement('a');
             card.classList.add('card1');
@@ -231,6 +229,7 @@ open.addEventListener("click", () => {
 })
 close.addEventListener("click", () => {
     nav.style.top="-110%"
+    nav.style.display="none";
 })
 
 
@@ -239,12 +238,18 @@ window.addEventListener("scroll", () => {
     let bar = document.getElementById('header');
     if (window.scrollY > 50) {
         bar.style.background = 'rgba(20, 20, 20, 0.7)';
-        bar.style.backdropFilter = 'blur(10px)'
+        bar.style.backdropFilter = 'blur(10px)';
     }
     else {
         bar.style.backdropFilter = ''
         bar.style.background = '';
     }    
 })
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 1200) {
+        document.querySelector('.nav-items').style.display = 'flex';
+    } 
+});
 
 
