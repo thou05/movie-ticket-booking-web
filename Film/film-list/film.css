@@ -1,0 +1,183 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* dark */
+body{
+    background-color: rgb(23,23,23);
+}
+
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+/* light */
+/* .card-movie{
+    padding: 0 !important;
+	border-radius: 10px;
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    transition: all 1s ease-in-out;
+} */
+
+/* dark */
+.card-movie{
+    padding: 0 !important;
+	border-radius: 10px;
+    border: #747070;
+    transition: all 0.6s ease-in-out;
+    background-color: rgb(37, 37, 37);
+    overflow: hidden;
+}
+
+
+.card-movie:hover{
+    transform: scale(1.06);
+}
+
+.card-title{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 100%;  /* or a specific width like 150px */
+    display: block;    /* Add this line */
+    
+}
+.card-title, .movie_info{
+    color: rgb(199, 195, 195);
+}
+
+.card-movie img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+    object-fit:cover;
+    width: 100%;
+    cursor:pointer;
+}
+
+
+
+
+.movie_genre{
+    color: #6d6b6b;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 100%;  /* or a specific width like 150px */
+    display: block;    /* Add this line */
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.movie_star{
+    padding-top: 5px;
+    margin-left: 10px;
+    
+    
+}
+.movie_info{
+    color: #646363;
+    padding-left: 13px;
+    
+}
+
+.movie_info i{
+    font-size: 13px;
+}
+.card-title{
+    cursor:pointer;
+}
+
+
+/* ------------ */
+
+.navbar {
+    background-color: rgb(35, 35, 35);
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e63946; /* Chọn màu sắc khi hover */
+}
+
+.active {
+    color: #e63946; /* Màu sắc cho tab đang hoạt động */
+}
+
+.movie-list {
+    margin-top: 2rem;
+}
+
+.card-movie {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    transition: transform 0.3s;
+}
+
+.card-movie:hover {
+    transform: scale(1.05);
+}
+
+.card-title, .movie_info {
+    color: rgb(199, 195, 195);
+}
+
+
+
+
+
+.movie-age {
+    position: absolute;
+    top: 0.5rem; /* Cách từ trên xuống */
+    left: 0.5rem; /* Cách từ bên trái */
+    padding: 0.25rem 0.5rem; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    color: white; /* Màu chữ trắng */
+    font-weight: bold; /* Đậm chữ */
+    font-size: 0.7rem;
+    z-index: 1; /* Đặt lên trên các phần tử khác */
+}
+
+/* Các quy tắc khác cho movie-age nếu cần */
+
+
+.movie-age[data-age="p"] {
+    background-color: #579b41;
+    text-transform: uppercase;
+    padding: 2.5px 10px;
+}
+
+.movie-age[data-age="k"] {
+    background-color: #006ee6;
+    text-transform: uppercase;
+    padding: 2.5px 10px;
+}
+
+.movie-age[data-age="13+"] {
+    background-color: #ddbc3f; 
+}
+
+.movie-age[data-age="16+"] {
+    background-color: #e88021;
+}
+
+.movie-age[data-age="18+"] {
+    background-color: #9b2020;
+}
+
