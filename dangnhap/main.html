@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css'>
+    <title>Login</title>
+</head>
+<body>
+    <div class="form">
+        <div class="design">
+            <div class="round_point"></div>
+            <div class="btns">
+                <a href="main.html" id="login" class="active">Login</a>
+                <a href="signup.html" id="signup" class="inactive">Sign Up</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="login">
+                <form action="" name="log">
+                    <h3>Login</h3>
+                    <div class="login_field">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="text" name="User" class="login_input" placeholder="User name / Email">
+                    </div>
+                    <div class="login_field">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <input type="password" name="pass" class="login_input" placeholder="Password">
+                    </div>
+                    <input class="button" type="button" value="Log In Now" onclick="login(document.forms.log);">
+                    <!-- <button>Log In Now</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
