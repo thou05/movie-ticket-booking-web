@@ -1,0 +1,3 @@
+[submodule "dangnhap"]
+	path = dangnhap
+	url = https://github.com/thou05/movie-ticket-booking-web.git
