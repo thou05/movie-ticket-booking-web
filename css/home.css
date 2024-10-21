@@ -876,9 +876,6 @@ body{
         gap: 2rem;
     }
     
-    .nav-items li:hover .sub-menu {
-        display: none;
-    }
     
 }
 
