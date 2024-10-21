@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -5,9 +8,13 @@
 
 /* dark */
 body{
-    background-color: rgb(23,23,23);
+    background-color: rgb(0, 0, 0);
 }
 
+/* .navbar{
+    position: sticky;
+    top: 0;
+} */
 
 .movie-list-wrapper{
     position: relative;
@@ -93,38 +100,81 @@ body{
 
 .btn-buy{
     background-color: #db0510;
+    font-size: 0.9rem;
 }
 
 
 /* ------------ */
 
-.navbar {
+/* .status-container {
     background-color: rgb(36, 36, 36);
     padding: 1rem 2rem;
-}
+} */
 
-.navbar-brand {
+/* .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
+} */
+
+
+/* -------------------- */
+
+
+.status-container {
+    padding: 1rem 2rem; /* Khoảng cách bên trong (top/bottom và left/right) */
+    border-radius: 50px; 
+    margin-top: 2rem; /* Khoảng cách phía trên */
+    text-align: center; /* Căn giữa các mục */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar-nav .nav-link {
+.status-nav {
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    width: 100%; /* Chiếm hết chiều ngang container */
+    max-width: 700px; 
+    margin-bottom: 0;
+    
+}
+
+.status-item {
+    margin: 0 1rem; /* Khoảng cách giữa các mục */
+}
+
+.nav-link {
     color: #fff;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
+    padding: 0.75rem 1.5rem; /* Khoảng cách bên trong của mỗi mục */
+    font-weight: 700; /* Đậm chữ */
+    text-transform: uppercase; /* Viết hoa chữ */
+    font-size: 1.1rem; /* Kích cỡ chữ */
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    
 }
 
-.navbar-nav .nav-link:hover {
-    color: #e50914; /* Chọn màu sắc khi hover */
+.nav-link:hover {
+    color: #ffffff !important; /* Giữ màu trắng cho chữ */
+    border: 2px solid #e50914;
+    background-color: #e50914;
 }
 
 .active {
-    color: #e50914; /* Màu sắc cho tab đang hoạt động */
+    border: 2px solid #e50914;
+    border-radius: 50px;
+    color: #e50914 !important; 
+
 }
 
+
+/* --------------- */
 .movie-list {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .card-movie {
@@ -185,3 +235,15 @@ body{
     background-color: #9b2020;
 }
 
+
+
+@media (max-width: 768px) {
+    .status-container {
+        padding: 0.5rem 1rem; /* Giảm padding cho màn hình nhỏ */
+    }
+    
+    .nav-link {
+        padding: 0.5rem 1rem; /* Giảm padding trong các mục */
+        font-size: 0.9rem; /* Giảm kích cỡ chữ */
+    }
+}

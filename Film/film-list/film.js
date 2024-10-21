@@ -82,13 +82,24 @@ document.addEventListener('DOMContentLoaded', () => {
     loadUpcomingMovies();
     showNowShowing();
 
-    document.getElementById('now-showing').addEventListener('click', (event) => {
+    const nowShowingTab = document.getElementById('now-showing');
+    const upcomingMoviesTab = document.getElementById('upcoming-movies');
+
+    nowShowingTab.addEventListener('click', (event) => {
         event.preventDefault();
         showNowShowing();
+        updateActiveTab(nowShowingTab, upcomingMoviesTab);
     });
 
-    document.getElementById('upcoming-movies').addEventListener('click', (event) => {
+    upcomingMoviesTab.addEventListener('click', (event) => {
         event.preventDefault();
         showUpcomingMovies();
+        updateActiveTab(upcomingMoviesTab, nowShowingTab);
     });
 });
+
+// Hàm để cập nhật class 'active' cho các tab
+function updateActiveTab(activeTab, inactiveTab) {
+    activeTab.classList.add('active'); // Thêm class 'active' cho tab được nhấn
+    inactiveTab.classList.remove('active'); // Xóa class 'active' khỏi tab không được nhấn
+}

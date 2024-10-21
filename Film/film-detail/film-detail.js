@@ -63,7 +63,7 @@ async function loadMovieDetails(movieId) {
             //DESCRIPTION
             document.getElementById('movieDecs').textContent = movie.Description;
             // Thiết lập nội dung ngắn và đầy đủ
-            const plotShort = movie.Plot.slice(0, 150);  // Giới hạn 100 ký tự
+            const plotShort = movie.Plot.slice(0, 130);  // Giới hạn 100 ký tự
             const plotFull = movie.Plot;
 
             document.getElementById('moviePlotShort').textContent = plotShort + "...";

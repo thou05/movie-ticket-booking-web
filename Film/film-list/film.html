@@ -10,12 +10,16 @@
 </head>
 <body>
 
-    <div class="nav-container">
-        <ul class="navbar-nav">
-            <li class="nav-item">
+    <div class="navbar">
+        <iframe  id="header" src="../../dungchung/nav.html" frameborder="0" width="100%" ></iframe>
+    </div>
+
+    <div class="container status-container">
+        <ul class="row status-nav">
+            <li class="col status-item">
                 <a class="nav-link active" href="#" id="now-showing">Phim Đang Chiếu</a>
             </li>
-            <li class="nav-item">
+            <li class="col status-item">
                 <a class="nav-link" href="#" id="upcoming-movies">Phim Sắp Chiếu</a>
             </li>
         </ul>
@@ -26,6 +30,10 @@
             <div id="now-showing-content" class="movie-list row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4"></div>
             <div id="upcoming-content" class="movie-list row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 d-none"></div>
         </div>
+    </div>
+
+    <div class="footer">
+        <iframe  id="footer" src="../../dungchung/footer.html" frameborder="0" width="100%" ></iframe>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
