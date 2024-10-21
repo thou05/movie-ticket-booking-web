@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0B1118;
+}
+
+:root{
+    --pink: #DE5D83;
+    --black: #101116;
+    --gray: #bebebe;
+    --light-gray: #d9d9d9;
+    --comment-box: #171B27;
+    --comment:#555D68;
+    --comment-date:#8A8A8A;
+    --warning:#E22C2C;
+    --yellow:#EEE62F;
+}
+a{
+    text-decoration: none;
+}
+i{
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+img{
+    cursor: pointer;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5% 5% 5%;
+    /* background-color: #171B27; */
+    color: #fff;
+    border-top: 5px solid #171B27;
+}
+.footer .footer-advise {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.footer .footer-advise ul{
+    display: flex;
+}
+
+.footer-advise ul li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.footer-advise ul li a {
+    padding: 0 10px 5px 0;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out;
+}
+
+.footer-advise ul li:hover a {
+    color: var(--pink);
+}
+
+.footer-advise .advise-text {
+    margin-top: 10px;
+}
+
+.footer-advise .advise-text p {
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.footer .footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.footer-social i{
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--pink);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.footer-social i:hover{
+    background-color: var(--black);
+    color: var(--pink);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.footer h4{
+    margin-bottom: 20px;
+}
+
+.footer .moblie-app{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer .moblie-app img {
+    width: 40%;
+}   
+
+@media(max-width:1200px) {
+    .footer{
+        text-align: center;
+        gap: 2rem;
+    }
+}
