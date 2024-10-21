@@ -12,7 +12,7 @@ async function loadMovies() {
                         <div class="position-relative">
                         <div class="movie-age" data-age="${movie.Age}">${movie.Age}</div>
                         </div>
-                        <a href="../film-detail/test.html?id=${movie.id}" class="card card-movie">
+                        <a href="../film-detail/film-detail.html?id=${movie.id}" class="card card-movie">
                         <img src="${movie.Poster || 'default-poster.jpg'}" class="card-img-top movie-list-item-img" alt="${movie.Title}">
                         <div class="card-body">
                             <h5 class="card-title">${movie.Title}</h5>
@@ -22,7 +22,7 @@ async function loadMovies() {
                                     <span class="movie_info"><i class="fas fa-star"></i> ${movie.Rated}</span>
                                 </div>
                                 <div class="col">
-                                    <a href="#" class="btn btn-danger float-end">Mua vé</a>
+                                    <a href="#" class="btn btn-danger float-end btn-buy">Mua vé</a>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ async function loadUpcomingMovies() {
             const movieCard = `
                 <div class="col mb-4">
                     <div class="card card-movie">
-                        <a href="../film-detail/test.html?id=${movie.id}" class="card card-movie">
+                        <a href="../film-detail/film-detail.html?id=${movie.id}" class="card card-movie">
                             <img src="${movie.Poster || 'default-poster.jpg'}" class="card-img-top movie-list-item-img" alt="${movie.Title}">
                             <div class="card-body">
                                 <h5 class="card-title">${movie.Title}</h5>
