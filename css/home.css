@@ -374,6 +374,7 @@ body{
 
 .swiper-container .movie-rating i {
     font-size: 75%;
+    color: var(--pink);
 }
 
 .swiper-container .movie-rating p{
@@ -383,8 +384,10 @@ body{
 }
 
 .swiper-container .movie-rating .rect{
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     padding: 0.6rem;
+    border-radius: 30%;
+    background-color: var(--pink);
 }
 
 .swiper-container .movie-btn{
