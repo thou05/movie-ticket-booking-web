@@ -250,6 +250,9 @@ window.addEventListener('resize', function() {
     if (window.innerWidth > 1200) {
         document.querySelector('.nav-items').style.display = 'flex';
     } 
+    else {
+        document.querySelector('.nav-items').style.display = 'none';
+    }
 });
 
 
