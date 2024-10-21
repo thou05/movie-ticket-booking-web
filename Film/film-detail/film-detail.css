@@ -1,0 +1,298 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Chỉ ẩn overflow ngang */
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature {
+    position: relative;
+    min-height: 100vh; /* Đảm bảo chiếm ít nhất toàn bộ chiều cao màn hình */
+    width: 100vw; /* Sửa từ 100wh thành 100vw */
+    overflow: hidden;
+}
+
+.feature__bg {
+    /* position: fixed;  */
+    top: 0; /* Dính lên đầu */
+    left: 0; /* Dính vào bên trái */
+    width: 100%; /* Chiều rộng 100% */
+    height: 100%; /* Chiều cao 100% */
+    overflow: hidden; /* Ẩn bất kỳ phần nào không muốn hiển thị */
+}
+
+
+.feature__bg--video {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+    object-fit: cover;
+    z-index: -1;
+    /* overflow: hidden; */
+}
+
+
+.feature-content {
+    position: absolute;
+    bottom: 5%; /* Đẩy phần chữ lên một chút để cách xa cạnh dưới */
+    left: 5%; /* Đẩy phần chữ về bên trái */
+    transform: none; /* Bỏ hiệu ứng dịch sang trái */
+    text-align: left; /* Căn lề trái nội dung */
+    width: 80%; /* Điều chỉnh kích thước khối nội dung */
+    padding: 2rem;
+    z-index: 1;
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Chỉ giữ hiệu ứng đổ bóng chữ */
+}
+
+h1.movie-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #f8f9fa;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.movie-meta {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #ced4da;
+}
+
+.movie-description {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: #f1f1f1;
+}
+
+h5.movie-content{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #f8f9fa;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.buy-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    background-color: #e50914; /* Màu nút "Mua vé" giữ nguyên */
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(229, 9, 20, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.buy-btn:hover {
+    background-color: #c82333; /* Màu khi hover giữ nguyên */
+    transform: scale(1.05); /* Hiệu ứng zoom khi hover */
+}
+
+.info-btn{
+    font-size: 0.7rem;
+    /* padding: 0.5rem 1.5rem; */
+    /* color: white; */
+
+    /* border: none; */
+    /* white-space: nowrap; */
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color:#ced4da;
+    font-weight: bold;
+}
+
+.feature__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7)); /* Chỉ giữ hiệu ứng mờ dần trên video để dễ nhìn phần chữ */
+    z-index: 0;
+}
+
+.video-onl {
+    position: absolute; /* Đặt video ở vị trí tuyệt đối */
+    top: 0; /* Dính lên đầu */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Chiều cao toàn bộ viewport */
+}
+
+.video-onl iframe {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 100vh; /* Chiều cao 100% viewport */
+    object-fit: cover; /* Đảm bảo video cover toàn bộ */
+}
+
+
+/* Age color coding */
+.movie-age {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold; /* Đậm chữ */
+    font-size: 0.9rem;
+}
+
+
+
+.movie-age[data-age="p"] {
+    background-color: #579b41;
+    text-transform: uppercase;
+    padding: 2.5px 10px;
+}
+
+.movie-age[data-age="k"] {
+    background-color: #006ee6;
+    text-transform: uppercase;
+    padding: 2.5px 10px;
+}
+
+.movie-age[data-age="13+"] {
+    background-color: #ddbc3f; 
+}
+
+.movie-age[data-age="16+"] {
+    background-color: #e88021;
+}
+
+.movie-age[data-age="18+"] {
+    background-color: #9b2020;
+}
+
+
+/* -------------------------- */
+
+
+.movie-plot-short {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline;
+    max-width: 400px;  /* Điều chỉnh kích thước cho phù hợp */
+}
+
+.movie-plot-full {
+    display: none;  /* Ẩn phần nội dung đầy đủ ban đầu */
+}
+
+.toggle-text {
+    color: rgb(192, 194, 59);
+    cursor: pointer;
+    display: inline;  /* Hiển thị nút "Xem thêm" */
+    font-size: 1rem;
+    margin-left: 5px;
+    text-align: right;
+}
+
+
+.movie-desc {
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight:lighter;
+}
+
+
+
+.movie-meta-item {
+    font-weight: bold;
+    color: #1f1e1e; /* Màu chữ chính */
+    padding: 0.2rem 0.5rem; /* Khoảng cách xung quanh */
+    border-radius:75px; /* Bo góc */
+    background-color: rgba(255, 255, 255, 0.596); /* Nền trắng nhẹ */
+    font-size: 0.95rem;
+    
+}
+
+.movie-meta-separator {
+    color: #888; 
+    font-weight: normal;
+    margin: 0 5px;
+}
+
+/* ------------- */
+
+.more-info {
+    display: none;
+    margin-top: 1rem;
+
+    
+}
+
+
+.info-item {
+    margin-bottom: 1rem; /* Khoảng cách giữa các mục thông tin */
+}
+
+.info-item h5 {
+    font-size: 1rem; /* Kích thước font cho tiêu đề mục */
+    font-weight: 600; /* Đậm hơn */
+    color: #f8f9fa; /* Màu chữ tiêu đề */
+    margin-bottom: 0.5rem; /* Khoảng cách dưới tiêu đề */
+}
+
+.info-item p {
+    font-size: 0.9rem; /* Kích thước font cho nội dung */
+    color: #ced4da; /* Màu chữ cho nội dung */
+    margin: 0; /* Bỏ margin để căn lề tốt hơn */
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    h1.movie-title {
+        font-size: 2rem;
+    }
+
+    .movie-meta {
+        font-size: 1rem;
+    }
+
+    .movie-description {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .movie-age {
+        padding: 2px 5px;
+        font-size: 0.7rem; 
+    }
+
+    
+
+    .movie-meta-item, .movie-meta-separator {
+        flex: 1 1 100%; /* Mỗi phần tử chiếm toàn bộ chiều rộng */
+        text-align: left;
+        margin-bottom: 0.5rem; /* Khoảng cách giữa các hàng */
+    }
+
+    .movie-meta-separator {
+        display: none; /* Ẩn dấu phân cách trên màn hình nhỏ */
+    }
+    
+}
