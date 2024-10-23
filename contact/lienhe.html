@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lienhe</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lemon&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <header class="header" id="header">
+            <div class="logo">
+                <h1>movie</h1>
+            </div>
+            <nav class="navBar">
+                <div class="open-btn" id="open">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="nav-items">
+                    <ul class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="#">Phim</a>
+                        </li>
+                        <li><a href="../uudai/main.html">Ưu Đãi</a></li>
+                        <div class="close-btn" id="close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </ul>
+                    <ul class="user">
+                        <li>
+                            <div class="search_user">
+                                <input type="text" placeholder="Search..." id="search_input">
+                                <div class="search">
+                                    <!-- <a href="#" class="card1">
+                                        <img src="img/the boys.jpg" alt="">
+                                        <div class="cont">
+                                            <h3 class=titl>The Boys </h3>
+                                            <p>Action, 2021 , <span>IMDB</span><i class="fa-solid fa-star"></i> 9.6</p>
+                                        </div>
+                                    </a> -->
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../dangnhap/main.html"><i class="fa-solid fa-user" id="user_icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="gioithieu.html" >GIỚI THIỆU</a></li>
+            <li><a href="lienhe.html" class="active" id="lienhe">LIÊN HỆ</a></li>
+            <li><a href="chinhsach.html" id="chinhsach">CHÍNH SÁCH</a></li>
+            <li><a href="huongdan.html" id="huongdan">HƯỚNG DẪN</a></li>
+        </ul>
+    </div>
+
+    <!-- Nội dung chính của trang -->
+    <div class="main-content">
+        <section>
+            <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
+            <br>
+            <div class="container">
+                <div class="city-selection">
+                    <h3>Tỉnh/Thành phố</h3>
+                  <label for="city" placeholder="Tỉnh/Thành phố"></label>
+                  <select id="city">
+                    <option value="Tỉnh/Thành phố">Tỉnh/Thành phố</option>
+                    <option value="Thái Nguyên">Thái Nguyên</option>
+                    <option value="Đồng Nai">Đồng Nai</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Thanh Hóa">Thanh Hóa</option>
+                    <option value="Bắc Giang">Bắc Giang</option>
+                    <option value="Khánh Hòa">Khánh Hòa</option>
+                    <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+                  </select>
+                </div>
+                <h3>Thông tin phản hồi</h3>
+                <div class="feedback-info" name="feedback">
+                    <form action="" id="feedbackForm">
+                        <label for="name">Tên</label>
+                        <input type="text" id="name" placeholder="Tên">
+            
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+            
+                        <label for="phone">Số điện thoại</label>
+                        <input type="text" id="phone" placeholder="Số điện thoại">
+            
+                        <label for="message">Nội dung</label>
+                        <textarea id="message" placeholder="Nội dung"></textarea>
+            
+                        <div class="button-container">
+                        <input class="button" type="button" value="Submit" onclick="feedbackInfo();">
+                        <input type="reset" class="button" value="Reset" onclick="resetForm();">
+                        </div>
+                    </form>
+                </div>
+                  <!-- <button type="submit">Gửi yêu cầu</button> -->
+                </div>
+              </div>              
+        </section>
+    </div>
+    <footer class="footer" style="top: 500px;">
+        <div class="footer-advise">
+            <div>
+                <ul>
+                    <li><a href="../contact/gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="../contact/lienhe.html">LIÊN HỆ</a></li>
+                    <li><a href="../contact/chinhsach.html">CHÍNH SÁCH</a></li>
+                    <li><a href="../contact/huongdan.html">HƯỚNG DẪN</a></li>
+                </ul>
+            </div>
+            <div class="advise-text">
+                <p>
+                    <small>Địa chỉ trụ sở: 3 Đ. Cầu Giấy, Ngọc Khánh, Đống Đa, Hà Nội, Việt Nam
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        Giấy chứng nhận ĐKKD số: 0106633482 - Đăng ký lần đầu ngày 08/09/2014 tại Sở Kế hoạch và Đầu tư Thành phố Hà Nội
+                    </small>
+                </p>
+            </div>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/sqw_uli"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Siluq.16"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.threads.net/@sqw_uli"><i class="fa-brands fa-threads"></i></a>
+            </div>
+        </div>
+        <div class="moblie-app">
+            <h4>Movie App</h4>
+            <div class="link-title">
+                <a href="https://play.google.com/store/apps/details?id=com.cgv.android.movieapp"
+                target="_blank"><img src="../img/footer/01.jpg" alt=""></a>
+                <a href="https://apps.apple.com/vn/app/cgv-cinemas/id1067166194"
+                target="_blank"><img src="../img/footer/02.jpg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
