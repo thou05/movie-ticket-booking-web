@@ -118,3 +118,4 @@ document.getElementById("infoBtn").addEventListener("click", function(e) {
         this.innerText = "Thêm thông tin";
     }
 });
+

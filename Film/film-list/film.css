@@ -9,6 +9,7 @@
 /* dark */
 body{
     background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 /* .navbar{
@@ -16,10 +17,16 @@ body{
     top: 0;
 } */
 
-.movie-list-wrapper{
+/* #header{
+    position: fixed;
+    top: 0;
+    z-index:2;
+} */
+
+/* .movie-list-wrapper{
     position: relative;
     overflow: hidden;
-}
+} */
 
 /* light */
 /* .card-movie{
@@ -30,6 +37,20 @@ body{
 } */
 
 /* dark */
+
+#header-iframe{
+    position: fixed;
+    top: 0;
+    z-index:2;
+    height: 4rem;
+    background-color: #000;
+}
+.movie-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .card-movie{
     padding: 0 !important;
 	border-radius: 10px;
@@ -37,11 +58,12 @@ body{
     transition: all 0.6s ease-in-out;
     background-color: rgb(37, 37, 37);
     overflow: hidden;
+
 }
 
 
 .card-movie:hover{
-    transform: scale(1.06);
+    transform: scale(1.1);
 }
 
 .card-title{
@@ -59,11 +81,34 @@ body{
 .card-movie img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 300px;
+    /* height: 30vh; */
     object-fit:cover;
     width: 100%;
+    aspect-ratio: 3 / 4;
     /* cursor:pointer; */
 }
+
+
+/* --------------- */
+.movie-list {
+    margin-top: 1rem;
+}
+
+.card-movie {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    transition: transform 0.3s;
+}
+
+.card-movie:hover {
+    transform: scale(1.05);
+}
+
+.card-title, .movie_info {
+    color: rgb(199, 195, 195);
+}
+
 
 
 
@@ -81,8 +126,7 @@ body{
 
 .movie_star{
     padding-top: 5px;
-    margin-left: 10px;
-    
+    margin-left: 10px; 
     
 }
 .movie_info{
@@ -129,6 +173,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 }
 
 .status-nav {
@@ -169,27 +214,6 @@ body{
     border-radius: 50px;
     color: #e50914 !important; 
 
-}
-
-
-/* --------------- */
-.movie-list {
-    margin-top: 1rem;
-}
-
-.card-movie {
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(37, 37, 37);
-    transition: transform 0.3s;
-}
-
-.card-movie:hover {
-    transform: scale(1.05);
-}
-
-.card-title, .movie_info {
-    color: rgb(199, 195, 195);
 }
 
 
@@ -236,14 +260,53 @@ body{
 }
 
 
+#footer-iframe{
+    height: 20rem;
+}
 
-@media (max-width: 768px) {
+
+/* for Phone: width < 740px */
+@media only screen and (max-width: 739px) {
     .status-container {
         padding: 0.5rem 1rem; /* Giảm padding cho màn hình nhỏ */
     }
-    
+   
+
     .nav-link {
-        padding: 0.5rem 1rem; /* Giảm padding trong các mục */
-        font-size: 0.9rem; /* Giảm kích cỡ chữ */
+        padding: 0.4rem 0.4rem;
+        font-size: 0.8rem; /* Giảm kích cỡ chữ */
     }
+    .btn-buy{
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    
+    .card-title{
+        font-size: 1.1rem;
+    }
+    .movie_genre{
+        font-size: 0.9rem;
+    }
+
+    /* .card-movie{
+        width: 216px;
+        height: 433px;
+        box-sizing: border-box;
+    } */
+
+
+    
 }
+
+/* for Tablet: >= 740 & < 1024 */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* for PC: >= 1024 */
+@media only screen and (min-width: 1024px) {
+
+}
+
+
+/* ------------------- */
