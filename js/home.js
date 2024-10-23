@@ -1,7 +1,7 @@
 let search = document.getElementsByClassName('search')[0];
 let search_input = document.getElementById('search_input');
 
-let json_url = "/json/movie.json";
+let json_url = "../json/movie.json";
 
 fetch(json_url)
     .then(response => response.json())
@@ -49,7 +49,7 @@ fetch(json_url)
 
     });
 
-    let slider_container = "/json/phim-dang-chieu.json"; // Đường dẫn đến file JSON
+    let slider_container = "../json/phim-dang-chieu.json"; // Đường dẫn đến file JSON
 
     fetch(slider_container)
         .then(response => response.json())
@@ -103,7 +103,7 @@ fetch(json_url)
 
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 
-fetch('/json/popular-movie.json') 
+fetch('../json/popular-movie.json') 
     .then(response => response.json())
     .then(data => {
         data.forEach(movie => {

@@ -4,28 +4,6 @@ let url_segment = url.split('?');
 // console.log(url_segment[1]);
 
 
-let play_btn = document.getElementById('play');
-let video = document.getElementById('video');
-
-
-play_btn.addEventListener('click', () => {
-    if (video.paused) {
-        video.play();
-        video.style.display = 'unset';
-        play_btn.classList.remove('bi-play-fill');
-        play_btn.classList.add('bi-pause');
-    } else {
-        video.pause();
-        video.style.display = 'none';
-        play_btn.classList.add('bi-play-fill');
-        play_btn.classList.remove('bi-pause');
-    }
-})
-
-// video.addEventListener('ended', () => {
-//     video.play();
-// })
-
 
 let date = new Date();
 let main_date = date.getDate();
@@ -56,9 +34,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate(),
-        img: '/img/poster/tedyo-pt.jpg',
+        img: '../img/poster/tedyo-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/ted-bg.jpg',
+        background: '../img/bg/ted-bg.jpg',
     },
     {
         movie: 'TeeYod',
@@ -77,9 +55,9 @@ let pvr = [
         a: [18, 10],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/tedyo-pt.jpg',
+        img: '../img/poster/tedyo-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/ted-bg.jpg',
+        background: '../img/bg/ted-bg.jpg',
     },
     {
         movie: 'TeeYod',
@@ -98,9 +76,9 @@ let pvr = [
         a: [18, 10],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/tedyo-pt.jpg',
+        img: '../img/poster/tedyo-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/ted-bg.jpg',
+        background: '../img/bg/ted-bg.jpg',
     },
     {
         movie: 'CDHM',
@@ -123,9 +101,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate(),
-        img: '/img/poster/codau-pt.png',
+        img: '../img/poster/codau-pt.png',
         video: 'video/Gadar2 Official Trailer - 11th August - Sunny Deol - Ameesha Patel - Anil Sharma - Zee Studios.mp4',
-        background: '/img/bg/codau-bg.jpg',
+        background: '../img/bg/codau-bg.jpg',
     },
     {
         movie: 'CDHM',
@@ -144,9 +122,9 @@ let pvr = [
         a: [5, 7, 6, 2, 4],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/codau-pt.png',
+        img: '../img/poster/codau-pt.png',
         video: 'video/Gadar2 Official Trailer - 11th August - Sunny Deol - Ameesha Patel - Anil Sharma - Zee Studios.mp4',
-        background: '/img/bg/codau-bg.jpg',
+        background: '../img/bg/codau-bg.jpg',
     },
     {
         movie: 'CDHM',
@@ -165,9 +143,9 @@ let pvr = [
         a: [5, 7, 6, 2, 4],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/codau-pt.png',
+        img: '../img/poster/codau-pt.png',
         video: 'video/Gadar2 Official Trailer - 11th August - Sunny Deol - Ameesha Patel - Anil Sharma - Zee Studios.mp4',
-        background: '/img/bg/codau-bg.jpg',
+        background: '../img/bg/codau-bg.jpg',
     },
     {
         movie: 'Robot',
@@ -190,9 +168,9 @@ let pvr = [
         a: [18, 10],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
-        img: '/img/poster/robot-pt.png',
+        img: '../img/poster/robot-pt.png',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/robot-bg.jpg',
+        background: '../img/bg/robot-bg.jpg',
     },
     {
         movie: 'Robot',
@@ -215,9 +193,9 @@ let pvr = [
         a: [18, 10],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/robot-pt.png',
+        img: '../img/poster/robot-pt.png',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/robot-bg.jpg',
+        background: '../img/bg/robot-bg.jpg',
     },
     {
         movie: 'Robot',
@@ -240,9 +218,9 @@ let pvr = [
         a: [18, 10],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2 ,
-        img: '/img/poster/robot-pt.png',
+        img: '../img/poster/robot-pt.png',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/robot-bg.jpg',
+        background: '../img/bg/robot-bg.jpg',
     },
     {
         movie: 'Jack',
@@ -265,9 +243,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate(),
-        img: '/img/poster/domdom-pt.jpg',
+        img: '../img/poster/domdom-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/domdom-bg.jpg',
+        background: '../img/bg/domdom-bg.jpg',
     },
     {
         movie: 'Jack',
@@ -290,9 +268,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/domdom-pt.jpg',
+        img: '../img/poster/domdom-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/domdom-bg.jpg',
+        background: '../img/bg/domdom-bg.jpg',
     },
     {
         movie: 'Jack',
@@ -315,9 +293,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/domdom-pt.jpg',
+        img: '../img/poster/domdom-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/domdom-bg.jpg',
+        background: '../img/bg/domdom-bg.jpg',
     },
     {
         movie: 'NXCMCT',
@@ -340,9 +318,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate(),
-        img: '/img/poster/chuyentinh-pt.png',
+        img: '../img/poster/chuyentinh-pt.png',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/chuyentinh-bg.jpg',
+        background: '../img/bg/chuyentinh-bg.jpg',
     },
     {
         movie: 'NXCMCT',
@@ -365,9 +343,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/chuyentinh-pt.png',
+        img: '../img/poster/chuyentinh-pt.png',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/chuyentinh-bg.jpg',
+        background: '../img/bg/chuyentinh-bg.jpg',
     },
     {
         movie: 'NXCMCT',
@@ -390,9 +368,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/chuyentinh-pt.png',
+        img: '../img/poster/chuyentinh-pt.png',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/chuyentinh-bg.jpg',
+        background: '../img/bg/chuyentinh-bg.jpg',
     },
     {
         movie: 'Sos',
@@ -415,9 +393,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
-        img: '/img/poster/sos.pt.jpg',
+        img: '../img/poster/sos.pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/sos-bg.jpg',
+        background: '../img/bg/sos-bg.jpg',
     },
     {
         movie: 'Sos',
@@ -440,9 +418,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/sos.pt.jpg',
+        img: '../img/poster/sos.pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/sos-bg.jpg',
+        background: '../img/bg/sos-bg.jpg',
     },
     {
         movie: 'Sos',
@@ -465,9 +443,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/sos.pt.jpg',
+        img: '../img/poster/sos.pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/sos-bg.jpg',
+        background: '../img/bg/sos-bg.jpg',
     },
     {
         movie: 'Anlac',
@@ -490,9 +468,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
-        img: '/img/poster/anlac-pt.jpg',
+        img: '../img/poster/anlac-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/anlac-bg.jpg',
+        background: '../img/bg/anlac-bg.jpg',
     },
     {
         movie: 'Anlac',
@@ -515,9 +493,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/anlac-pt.jpg',
+        img: '../img/poster/anlac-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/anlac-bg.jpg',
+        background: '../img/bg/anlac-bg.jpg',
     },
     {
         movie: 'Anlac',
@@ -540,9 +518,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/anlac-pt.jpg',
+        img: '../img/poster/anlac-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/anlac-bg.jpg',
+        background: '../img/bg/anlac-bg.jpg',
     },
     {
         movie: 'DACDT',
@@ -565,9 +543,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
-        img: '/img/poster/doanhcongdctoi-pt.jpg',
+        img: '../img/poster/doanhcongdctoi-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/doanhcongdctoi-bg.jpg',
+        background: '../img/bg/doanhcongdctoi-bg.jpg',
     },
     {
         movie: 'DACDT',
@@ -590,9 +568,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/doanhcongdctoi-pt.jpg',
+        img: '../img/poster/doanhcongdctoi-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/doanhcongdctoi-bg.jpg',
+        background: '../img/bg/doanhcongdctoi-bg.jpg',
     },
     {
         movie: 'DACDT',
@@ -615,9 +593,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/doanhcongdctoi-pt.jpg',
+        img: '../img/poster/doanhcongdctoi-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/doanhcongdctoi-bg.jpg',
+        background: '../img/bg/doanhcongdctoi-bg.jpg',
     },
     {
         movie: 'Domino',
@@ -640,9 +618,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
-        img: '/img/poster/domino-pt.jpg',
+        img: '../img/poster/domino-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/domino-bg.webp',
+        background: '../img/bg/domino-bg.webp',
     },
     {
         movie: 'Domino',
@@ -665,9 +643,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/domino-pt.jpg',
+        img: '../img/poster/domino-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/domino-bg.webp',
+        background: '../img/bg/domino-bg.webp',
     },
     {
         movie: 'Domino',
@@ -690,9 +668,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/domino-pt.jpg',
+        img: '../img/poster/domino-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/domino-bg.webp',
+        background: '../img/bg/domino-bg.webp',
     },
     {
         movie: 'Takagi',
@@ -715,9 +693,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
-        img: '/img/poster/takagi-pt.jpg',
+        img: '../img/poster/takagi-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/takagi-bg.webp',
+        background: '../img/bg/takagi-bg.webp',
     },
     {
         movie: 'Takagi',
@@ -740,9 +718,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/takagi-pt.jpg',
+        img: '../img/poster/takagi-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/takagi-bg.webp',
+        background: '../img/bg/takagi-bg.webp',
     },
     {
         movie: 'Takagi',
@@ -765,9 +743,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/takagi-pt.jpg',
+        img: '../img/poster/takagi-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/takagi-bg.webp',
+        background: '../img/bg/takagi-bg.webp',
     },
     {
         movie: 'Taeyong',
@@ -790,9 +768,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
-        img: '/img/poster/taeyong-pt.jpg',
+        img: '../img/poster/taeyong-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/taeyong-bg.jpg',
+        background: '../img/bg/taeyong-bg.jpg',
     },
     {
         movie: 'Taeyong',
@@ -815,9 +793,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/taeyong-pt.jpg',
+        img: '../img/poster/taeyong-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/taeyong-bg.jpg',
+        background: '../img/bg/taeyong-bg.jpg',
     },
     {
         movie: 'Taeyong',
@@ -840,9 +818,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/taeyong-pt.jpg',
+        img: '../img/poster/taeyong-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/taeyong-bg.jpg',
+        background: '../img/bg/taeyong-bg.jpg',
     },
     {
         movie: 'Cam',
@@ -865,9 +843,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
-        img: '/img/poster/cam-pt.jpg',
+        img: '../img/poster/cam-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/cam-bg.jpg',
+        background: '../img/bg/cam-bg.jpg',
     },
     {
         movie: 'Cam',
@@ -890,9 +868,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
-        img: '/img/poster/cam-pt.jpg',
+        img: '../img/poster/cam-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/cam-bg.jpg',
+        background: '../img/bg/cam-bg.jpg',
     },
     {
         movie: 'Cam',
@@ -915,9 +893,9 @@ let pvr = [
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
-        img: '/img/poster/cam-pt.jpg',
+        img: '../img/poster/cam-pt.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
-        background: '/img/bg/cam-bg.jpg',
+        background: '../img/bg/cam-bg.jpg',
     }
 ]
 
@@ -1070,7 +1048,6 @@ let data = pvr.filter(obj => obj.date == main_date && obj.movie == url_segment[1
 if (data.length > 0) {
     document.getElementById('title').innerText = data[0].title;
     document.getElementById('poster').src = data[0].img;
-    document.getElementById('video').src = data[0].video
     document.getElementById('directed').innerText = data[0].directed;
     document.getElementById('starring').innerText = data[0].starring;
     document.getElementById('edited').innerText = data[0].edited;

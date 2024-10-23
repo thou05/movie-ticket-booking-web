@@ -14,7 +14,7 @@
         "Country": "Thái Lan",
         "Poster":"../img/poster/tedyod-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?TeeYod",
+        "Booking" : "..../html/book.html?TeeYod",
         "Images": "../img/bg/ted-bg.jpg"
     },
     {
@@ -32,7 +32,7 @@
         "Country": "Việt Nam",
         "Poster":"../img/poster/codau.png",
         "Response": "True",
-        "Booking" : "/html/book.html?CDHM",
+        "Booking" : "../html/book.html?CDHM",
         "Images": "../img/bg/codau-bg.jpg"
     },
     {
@@ -49,7 +49,7 @@
         "Language": "Tiếng Anh",
         "Country": "Mỹ",
         "Poster":"../img/poster/robot-pt.png",
-        "Booking" : "/html/book.html?Robot",
+        "Booking" : "../html/book.html?Robot",
         "Response": "True",
         "Images": "../img/bg/robot-bg.jpg"
     },
@@ -68,7 +68,7 @@
         "Country": "Nhật Bản",
         "Poster":"../img/poster/domdom-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?Jack",
+        "Booking" : "../html/book.html?Jack",
         "Images": "../img/bg/domdom-bg.jpg"
     }
 ]

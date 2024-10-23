@@ -12,10 +12,10 @@
         "Plot": "Ba năm sau cái chết của Yam, Yak vẫn tiếp tục săn lùng linh hồn bí ẩn mặc áo choàng đen. Gặp một cô gái có triệu chứng giống Yam, Yak phát hiện ra người bảo vệ linh hồn, pháp sư ẩn dật Puang, sống trong một khu rừng đầy nguy hiểm. Giữa những phép thuật ma quỷ và những sinh vật nguy hiểm. Khi họ đuổi theo linh hồn mặc áo choàng đen, tiếng kêu đầy ám ảnh của Tee Yod sắp quay trở lại một lần nữa...",
         "Language": "Tiếng Thái",
         "Country": "Thái Lan",
-        "Poster":"/img/poster/tedyo-pt.jpg",
+        "Poster":"../img/poster/tedyo-pt.jpg",
         "Response": "True",
-        "Images": "/img/bg/ted-bg.jpg",
-        "Booking" : "/html/book.html?TeeYod"
+        "Images": "../img/bg/ted-bg.jpg",
+        "Booking" : "../html/book.html?TeeYod"
     },
     {
         "Title": "Cô dâu hào môn",
@@ -30,10 +30,10 @@
         "Plot": "Phim lấy đề tài làm dâu hào môn và khai thác câu chuyện môn đăng hộ đối, lối sống và quy tắc của giới thượng lưu dưới góc nhìn hài hước và châm biếm.",
         "Language": " Tiếng Việt",
         "Country": "Việt Nam",
-        "Poster":"/img/poster/codau-pt.png",
+        "Poster":"../img/poster/codau-pt.png",
         "Response": "True",
-        "Images": "/img/bg/codau-bg.jpg",
-        "Booking" : "/html/book.html?CDHM"
+        "Images": "../img/bg/codau-bg.jpg",
+        "Booking" : "../html/book.html?CDHM"
     },
     {
         "Title": "Robot Hoang Dã",
@@ -48,10 +48,10 @@
         "Plot": "Sau một vụ đắm tàu, robot thông minh tên Roz bị mắc kẹt trên một hòn đảo hoang. Để sống sót trong môi trường khắc nghiệt, Roz gắn kết với các loài động vật trên đảo và chăm sóc một chú ngỗng con mồ côi.",
         "Language": "Tiếng Anh",
         "Country": "Mỹ",
-        "Poster":"/img/poster/robot-pt.png",
+        "Poster":"../img/poster/robot-pt.png",
         "Response": "True",
-        "Images": "/img/bg/robot-bg.jpg",
-        "Booking" : "/html/book.html?Robot"
+        "Images": "../img/bg/robot-bg.jpg",
+        "Booking" : "../html/book.html?Robot"
     },
     {
         "Title": "Mộ Đom Đóm",
@@ -66,10 +66,10 @@
         "Plot": "Bộ phim được đặt trong bối cảnh giai đoạn cuối chiến tranh thế giới thứ 2 ở Nhật, kể về câu chuyện cảm động về tình anh em của hai đứa trẻ mồ côi là Seita và Setsuko. Hai anh em mất mẹ trong một trận bom dữ dội của không quân Mỹ khi cha của chúng đang chiến đấu cho Hải quân Nhật. Hai đứa bé phải vật lộn giữa nạn đói, giữa sự thờ ơ của những người xung quanh (trong đó có cả người cô họ của mình)... Bi kịch thấm đẫm nước mắt.",
         "Language": "Tiếng Nhật",
         "Country": "Nhật Bản",
-        "Poster":"/img/poster/domdom-pt.jpg",
+        "Poster":"../img/poster/domdom-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?Jack",
-        "Images": "/img/bg/domdom-bg.jpg"
+        "Booking" : "../html/book.html?Jack",
+        "Images": "../img/bg/domdom-bg.jpg"
     },
     {
         "Title": "Ngày Xưa Có Một Chuyện Tình",
@@ -84,10 +84,10 @@
         "Plot": "Ngày Xưa Có Một Chuyện Tình xoay quanh câu chuyện tình bạn, tình yêu giữa hai chàng trai và một cô gái từ thuở ấu thơ cho đến khi trưởng thành, phải đối mặt với những thử thách của số phận. Trải dài trong 4 giai đoạn từ năm 1987 - 2000, ba người bạn cùng tuổi - Vinh, Miền, Phúc đã cùng yêu, cùng bỡ ngỡ bước vào đời, va vấp và vượt qua.",
         "Language": "Tiếng Việt",
         "Country": "Việt Nam",
-        "Poster":"/img/poster/chuyentinh-pt.png",
+        "Poster":"../img/poster/chuyentinh-pt.png",
         "Response": "True",
-        "Booking" : "/html/book.html?NXCMCT",
-        "Images": "/img/bg/chuyentinh-bg.jpg"
+        "Booking" : "../html/book.html?NXCMCT",
+        "Images": "../img/bg/chuyentinh-bg.jpg"
     },
     {
         "Title": "Tín Hiệu Cầu Cứu",
@@ -102,10 +102,10 @@
         "Plot": "Khi tỷ phú công nghệ Slater King gặp cô hầu bàn cocktail Frida tại buổi dạ tiệc gây quỹ, anh mời cô cùng anh và bạn bè đi nghỉ trong mơ trên hòn đảo riêng của anh. Khi những điều kỳ lạ bắt đầu xảy ra, Frida đặt câu hỏi về sự thât đang xảy ra trên đảo đối với mình.",
         "Language": "Tiếng Anh",
         "Country": "Mỹ",
-        "Poster":"/img/poster/sos.pt.jpg",
+        "Poster":"../img/poster/sos.pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?Sos",
-        "Images": "/img/bg/sos-bg.jpg"
+        "Booking" : "../html/book.html?Sos",
+        "Images": "../img/bg/sos-bg.jpg"
     },
     {
         "Title": "An Lạc",
@@ -120,10 +120,10 @@
         "Plot": "Phim của Myanma, do Win Lwin Htet làm đạo diễn. Bộ phim đạt 3 giải thưởng danh giá tại SEA International Film Festival 2024 sẽ mang đến cho khán giả một câu chuyện đáng yêu về một thầy tu và một chú chó cùng song hành với nhau vượt qua những vui buồn, ganh ghét của cuộc sống xung quanh, cùng nhau tìm đến hạnh phúc của cuộc đời.",
         "Language": "Tiếng Myanmar ",
         "Country": "Myanma",
-        "Poster":"/img/poster/anlac-pt.jpg",
+        "Poster":"../img/poster/anlac-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?Anlac",
-        "Images": "/img/bg/anlac-bg.jpg"
+        "Booking" : "../html/book.html?Anlac",
+        "Images": "../img/bg/anlac-bg.jpg"
     },
     {
         "Title": "Đố Anh Còng Được Tôi",
@@ -138,10 +138,10 @@
         "Plot": "Các thanh tra kỳ cựu nổi tiếng đã hoạt động trở lại! Thám tử Seo Do-cheol (HWANG Jung-min) và đội điều tra tội phạm nguy hiểm của anh không ngừng truy lùng tội phạm cả ngày lẫn đêm, đặt cược cả cuộc sống cá nhân của họ. Nhận một vụ án sát hại một giáo sư, đội thanh tra nhận ra những mối liên hệ với các vụ án trong quá khứ và nảy sinh những nghi ngờ về một kẻ giết người hàng loạt. Điều này đã khiến cả nước rơi vào tình trạng hỗn loạn. Khi đội thanh tra đi sâu vào cuộc điều tra, kẻ sát nhân đã chế nhạo họ bằng cách công khai tung ra một đoạn giới thiệu trực tuyến, chỉ ra nạn nhân tiếp theo và làm gia tăng sự hỗn loạn. Để giải quyết mối đe dọa ngày càng leo thang, nhóm đã kết nạp một sĩ quan tân binh trẻ Park Sun-woo (JUNG Hae-in), dẫn đến những khúc mắc và đầy rẫy bất ngờ trong vụ án.",
         "Language": "Tiếng Hàn",
         "Country": "Hàn Quốc",
-        "Poster":"/img/poster/doanhcongdctoi-pt.jpg",
+        "Poster":"../img/poster/doanhcongdctoi-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?DACDT",
-        "Images": "/img/bg/doanhcongdctoi-bg.jpg"
+        "Booking" : "../html/book.html?DACDT",
+        "Images": "../img/bg/doanhcongdctoi-bg.jpg"
     },
     {
         "Title": "Domino: Lối Thoát Cuối Cùng",
@@ -156,10 +156,10 @@
         "Plot": "Sau khi cha bị kẻ ác sát hại, từ người ngoài cuộc, An (Thuận Nguyễn) từng bước bị kéo vào cuộc chiến của các phe đảng xã hội đen. An một mình sẽ phải đối mặt với những nguy hiểm đe dọa đến cả tính mạng.",
         "Language": "Tiếng Việt",
         "Country": "Việt Nam",
-        "Poster":"/img/poster/domino-pt.jpg",
+        "Poster":"../img/poster/domino-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?Domino",
-        "Images": "/img/bg/domino-bg.webp"
+        "Booking" : "../html/book.html?Domino",
+        "Images": "../img/bg/domino-bg.webp"
     },
     {
         "Title": "Nhất Quỷ Nhì Ma, Thứ Ba Takagi: Trêu Rồi Yêu",
@@ -174,10 +174,10 @@
         "Plot": "Bản điện ảnh từ loạt truyện manga cùng tên, vốn gây ấn tượng với độc giả về những trò nghịch ngợm tuổi học trò của Takagi và cậu bạn Nishikita. Lấy bối cảnh 10 năm sau khi cả hai đã trưởng thành, bộ đôi Takagi - Nishikata sẽ có màn thả thính cực ngọt cùng lời tỏ tình vụng dại hứa hẹn làm xiêu lòng khán giả ngay trên màn ảnh rộng.",
         "Language": "Tiếng Nhật",
         "Country": "Nhật Bản",
-        "Poster":"/img/poster/takagi-pt.jpg",
+        "Poster":"../img/poster/takagi-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?Takagi",
-        "Images": "/img/bg/takagi-bg.webp"
+        "Booking" : "../html/book.html?Takagi",
+        "Images": "../img/bg/takagi-bg.webp"
     },
     {
         "Title": "TAEYONG: TỪ TAEYONG ĐẾN TY TRACK",
@@ -192,10 +192,10 @@
         "Plot": "Hòa mình vào thế giới đầy mê hoặc của TAEYONG, trải nghiệm âm nhạc đa dạng và những màn trình diễn quyến rũ của anh ấy. 'TY TRACK' trình diễn một loạt âm nhạc tuyệt đẹp và các sân khấu sôi động thể hiện tầm nhìn nghệ thuật độc đáo của TAEYONG, tất cả đều được trình bày trên quy mô điện ảnh. Chứng kiến ​​hành trình hậu trường khi TAEYONG chuẩn bị cho buổi hòa nhạc đột phá của mình. Hãy bước lên sân khấu cùng anh ấy và lắng nghe những câu chuyện chân thành mà anh ấy mong muốn được chia sẻ. 'TAEYONG: TY TRACK IN CINEMAS' là sự đi sâu vào âm nhạc, nghệ sĩ và hành trình đáng kinh ngạc đã định hình con đường của anh ấy.",
         "Language": "Tiếng Hàn",
         "Country": "Hàn Quốc",
-        "Poster":"/img/poster/taeyong-pt.jpg",
+        "Poster":"../img/poster/taeyong-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?Taeyong",
-        "Images": "/img/bg/taeyong-bg.jpg"
+        "Booking" : "../html/book.html?Taeyong",
+        "Images": "../img/bg/taeyong-bg.jpg"
     },
     {
         "Title": "CÁM",
@@ -210,10 +210,10 @@
         "Plot": "Phim điện ảnh Cám - Dị bản kinh dị đẫm máu chuyển thể từ cổ tích Tấm Cám",
         "Language": "Tiếng Việt",
         "Country": "Việt Nam",
-        "Poster":"/img/poster/cam-pt.jpg",
+        "Poster":"../img/poster/cam-pt.jpg",
         "Response": "True",
-        "Booking" : "/html/book.html?Cam",
-        "Images": "/img/bg/cam-bg.jpg"
+        "Booking" : "../html/book.html?Cam",
+        "Images": "../img/bg/cam-bg.jpg"
     }
 
 ]
