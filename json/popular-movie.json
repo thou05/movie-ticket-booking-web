@@ -14,7 +14,7 @@
         "Country": "Thái Lan",
         "Poster":"../img/poster/tedyod-pt.jpg",
         "Response": "True",
-        "Booking" : "..../html/book.html?TeeYod",
+        "Booking" : "../html/book.html?TeeYod",
         "Images": "../img/bg/ted-bg.jpg"
     },
     {

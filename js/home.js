@@ -255,4 +255,18 @@ window.addEventListener('resize', function() {
     }
 });
 
+window.onload = function() {
+    const currentPage = window.location.pathname;
+    
+    const navLinks = document.querySelectorAll('.nav-items a');
 
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href').includes(currentPage)) {
+            link.classList.add('active');
+        }
+    });
+};

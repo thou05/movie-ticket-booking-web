@@ -35,7 +35,6 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate(),
         img: '../img/poster/tedyo-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
         background: '../img/bg/ted-bg.jpg',
     },
     {
@@ -56,7 +55,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/tedyo-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/ted-bg.jpg',
     },
     {
@@ -77,7 +76,6 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/tedyo-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
         background: '../img/bg/ted-bg.jpg',
     },
     {
@@ -102,7 +100,6 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate(),
         img: '../img/poster/codau-pt.png',
-        video: 'video/Gadar2 Official Trailer - 11th August - Sunny Deol - Ameesha Patel - Anil Sharma - Zee Studios.mp4',
         background: '../img/bg/codau-bg.jpg',
     },
     {
@@ -123,7 +120,6 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/codau-pt.png',
-        video: 'video/Gadar2 Official Trailer - 11th August - Sunny Deol - Ameesha Patel - Anil Sharma - Zee Studios.mp4',
         background: '../img/bg/codau-bg.jpg',
     },
     {
@@ -144,7 +140,6 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/codau-pt.png',
-        video: 'video/Gadar2 Official Trailer - 11th August - Sunny Deol - Ameesha Patel - Anil Sharma - Zee Studios.mp4',
         background: '../img/bg/codau-bg.jpg',
     },
     {
@@ -169,7 +164,6 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
         img: '../img/poster/robot-pt.png',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
         background: '../img/bg/robot-bg.jpg',
     },
     {
@@ -194,7 +188,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/robot-pt.png',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/robot-bg.jpg',
     },
     {
@@ -219,7 +213,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2 ,
         img: '../img/poster/robot-pt.png',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/robot-bg.jpg',
     },
     {
@@ -244,7 +238,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate(),
         img: '../img/poster/domdom-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/domdom-bg.jpg',
     },
     {
@@ -269,7 +263,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/domdom-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/domdom-bg.jpg',
     },
     {
@@ -294,7 +288,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/domdom-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/domdom-bg.jpg',
     },
     {
@@ -319,7 +313,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate(),
         img: '../img/poster/chuyentinh-pt.png',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/chuyentinh-bg.jpg',
     },
     {
@@ -344,7 +338,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/chuyentinh-pt.png',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/chuyentinh-bg.jpg',
     },
     {
@@ -369,7 +363,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/chuyentinh-pt.png',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/chuyentinh-bg.jpg',
     },
     {
@@ -394,7 +388,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
         img: '../img/poster/sos.pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/sos-bg.jpg',
     },
     {
@@ -419,7 +413,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/sos.pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/sos-bg.jpg',
     },
     {
@@ -444,7 +438,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/sos.pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/sos-bg.jpg',
     },
     {
@@ -469,7 +463,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
         img: '../img/poster/anlac-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/anlac-bg.jpg',
     },
     {
@@ -494,7 +488,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/anlac-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/anlac-bg.jpg',
     },
     {
@@ -519,7 +513,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/anlac-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/anlac-bg.jpg',
     },
     {
@@ -544,7 +538,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
         img: '../img/poster/doanhcongdctoi-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/doanhcongdctoi-bg.jpg',
     },
     {
@@ -569,7 +563,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/doanhcongdctoi-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/doanhcongdctoi-bg.jpg',
     },
     {
@@ -594,7 +588,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/doanhcongdctoi-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/doanhcongdctoi-bg.jpg',
     },
     {
@@ -619,7 +613,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
         img: '../img/poster/domino-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/domino-bg.webp',
     },
     {
@@ -644,7 +638,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/domino-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/domino-bg.webp',
     },
     {
@@ -669,7 +663,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/domino-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/domino-bg.webp',
     },
     {
@@ -694,7 +688,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
         img: '../img/poster/takagi-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/takagi-bg.webp',
     },
     {
@@ -719,7 +713,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/takagi-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/takagi-bg.webp',
     },
     {
@@ -744,7 +738,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/takagi-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/takagi-bg.webp',
     },
     {
@@ -769,7 +763,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
         img: '../img/poster/taeyong-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/taeyong-bg.jpg',
     },
     {
@@ -794,7 +788,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/taeyong-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/taeyong-bg.jpg',
     },
     {
@@ -819,7 +813,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/taeyong-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/taeyong-bg.jpg',
     },
     {
@@ -844,7 +838,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() ,
         img: '../img/poster/cam-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/cam-bg.jpg',
     },
     {
@@ -869,7 +863,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 1,
         img: '../img/poster/cam-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/cam-bg.jpg',
     },
     {
@@ -894,7 +888,7 @@ let pvr = [
         price: [800, 800, 560, 560, 560, 560, 430, 430],
         date: date.getDate() + 2,
         img: '../img/poster/cam-pt.jpg',
-        video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
+
         background: '../img/bg/cam-bg.jpg',
     }
 ]
@@ -1053,15 +1047,11 @@ if (data.length > 0) {
     document.getElementById('edited').innerText = data[0].edited;
     document.getElementById('time').innerText = data[0].time;
 
-    // Thêm phong cách cho hình nền
     var styleElem = document.head.appendChild(document.createElement("style"));
     styleElem.innerHTML = `.book .right:before {background: url(${data[0].background}) no-repeat center -30px/cover}`;
 
-    // Gọi hàm addSeats nếu cần
-    // addSeats(data);
 } else {
     console.error("Không tìm thấy dữ liệu cho phim này vào ngày đã chỉ định.");
-    // Có thể thêm thông báo hiển thị cho người dùng nếu cần
 }
 
 let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
