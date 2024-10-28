@@ -313,8 +313,8 @@ body{
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
-    max-width: 100%;  /* or a specific width like 150px */
-    display: block;    /* Add this line */
+    max-width: 100%;  
+    display: block;   
     
 }
 .card-title, .movie_info{
@@ -324,7 +324,6 @@ body{
 .card-movie img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    /* height: 30vh; */
     object-fit:cover;
     width: 100%;
     aspect-ratio: 3 / 4;
@@ -361,8 +360,8 @@ body{
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
-    max-width: 100%;  /* or a specific width like 150px */
-    display: block;    /* Add this line */
+    max-width: 100%; 
+    display: block;   
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -409,10 +408,10 @@ body{
 
 
 .status-container {
-    padding: 1rem 2rem; /* Khoảng cách bên trong (top/bottom và left/right) */
+    padding: 1rem 2rem; 
     border-radius: 50px; 
-    margin-top: 2rem; /* Khoảng cách phía trên */
-    text-align: center; /* Căn giữa các mục */
+    margin-top: 2rem; 
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,22 +423,22 @@ body{
     padding: 0;
     display: flex;
     justify-content:center;
-    width: 100%; /* Chiếm hết chiều ngang container */
+    width: 100%;
     max-width: 700px; 
     margin-bottom: 0;
     
 }
 
 .status-item {
-    margin: 0 1rem; /* Khoảng cách giữa các mục */
+    margin: 0 1rem; 
 }
 
 .nav-link {
     color: #fff;
-    padding: 0.75rem 1.5rem; /* Khoảng cách bên trong của mỗi mục */
-    font-weight: 700; /* Đậm chữ */
-    text-transform: uppercase; /* Viết hoa chữ */
-    font-size: 1.1rem; /* Kích cỡ chữ */
+    padding: 0.75rem 1.5rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    font-size: 1.1rem; 
     border: 2px solid #ffffff;
     border-radius: 50px;
     color: #ffffff;
@@ -455,7 +454,7 @@ body{
 .nav-link.active {
     border: 2px solid #e50914;
     border-radius: 50px;
-    color: #e50914 !important; 
+    color: #e50914; 
 
 }
 
@@ -465,12 +464,12 @@ body{
 
 .movie-age {
     position: absolute;
-    top: 0.5rem; /* Cách từ trên xuống */
-    left: 0.5rem; /* Cách từ bên trái */
-    padding: 0.25rem 0.5rem; /* Khoảng cách bên trong */
-    border-radius: 5px; /* Bo góc */
-    color: white; /* Màu chữ trắng */
-    font-weight: bold; /* Đậm chữ */
+    top: 0.5rem; 
+    left: 0.5rem;
+    padding: 0.25rem 0.5rem; 
+    border-radius: 5px; 
+    color: white; 
+    font-weight: bold; 
     font-size: 0.7rem;
     z-index: 1; /* Đặt lên trên các phần tử khác */
 }
@@ -609,13 +608,13 @@ body{
 /* for Phone: width < 740px */
 @media only screen and (max-width: 739px) {
     .status-container {
-        padding: 0.5rem 1rem; /* Giảm padding cho màn hình nhỏ */
+        padding: 0.5rem 1rem; 
     }
    
 
     .nav-link {
         padding: 0.4rem 0.4rem;
-        font-size: 0.8rem; /* Giảm kích cỡ chữ */
+        font-size: 0.8rem;
     }
     .btn-buy{
         font-size: 0.7rem;
