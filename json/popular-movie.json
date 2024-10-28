@@ -1,5 +1,6 @@
 [
     {
+        "id": "1.1",
         "Title": "Tee Yod: Quỷ Ăn Tạng Phần 2",
         "Age": "18+",
         "Rated": "8.9",
@@ -18,6 +19,7 @@
         "Images": "../img/bg/ted-bg.jpg"
     },
     {
+        "id": "1.2",
         "Title": "Cô dâu hào môn",
         "Age": "18+",
         "Rated": "8.1",
@@ -36,6 +38,7 @@
         "Images": "../img/bg/codau-bg.jpg"
     },
     {
+        "id": "1.3",
         "Title": "Robot Hoang Dã",
         "Age": "p",
         "Rated": "9.7",
@@ -54,6 +57,7 @@
         "Images": "../img/bg/robot-bg.jpg"
     },
     {
+        "id": "1.4",
         "Title": "Mộ Đom Đóm",
         "Age": "k",
         "Rated": "8.8",

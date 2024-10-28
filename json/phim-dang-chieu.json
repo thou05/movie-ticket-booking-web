@@ -1,5 +1,6 @@
 [
     {
+        "id": "1.1",
         "Title": "Tee Yod: Quỷ Ăn Tạng Phần 2",
         "Age": "18+",
         "Rated": "8.9",
@@ -15,9 +16,12 @@
         "Poster":"../img/poster/tedyo-pt.jpg",
         "Response": "True",
         "Images": "../img/bg/ted-bg.jpg",
-        "Booking" : "../html/book.html?TeeYod"
+        "Booking" : "../html/book.html?TeeYod",
+        "Video": "https://www.youtube.com/embed/xVVZvSybaEc?autoplay=1&loop=1&playlist=xVVZvSybaEc&mute=1"
+
     },
     {
+        "id": "1.2",
         "Title": "Cô dâu hào môn",
         "Age": "18+",
         "Rated": "8.1",
@@ -33,9 +37,11 @@
         "Poster":"../img/poster/codau-pt.png",
         "Response": "True",
         "Images": "../img/bg/codau-bg.jpg",
+        "Video": "https://www.youtube.com/embed/QJ8E9R70csY?autoplay=1&loop=1&playlist=QJ8E9R70csY&mute=1",
         "Booking" : "../html/book.html?CDHM"
     },
     {
+        "id": "1.3",
         "Title": "Robot Hoang Dã",
         "Age": "p",
         "Rated": "9.7",
@@ -51,9 +57,11 @@
         "Poster":"../img/poster/robot-pt.png",
         "Response": "True",
         "Images": "../img/bg/robot-bg.jpg",
-        "Booking" : "../html/book.html?Robot"
+        "Booking" : "../html/book.html?Robot",
+        "Video": "https://www.youtube.com/embed/2l8_FNIBWLM?autoplay=1&loop=1&playlist=2l8_FNIBWLM&mute=1"
     },
     {
+        "id": "1.4",
         "Title": "Mộ Đom Đóm",
         "Age": "k",
         "Rated": "8.8",
@@ -69,9 +77,11 @@
         "Poster":"../img/poster/domdom-pt.jpg",
         "Response": "True",
         "Booking" : "../html/book.html?Jack",
-        "Images": "../img/bg/domdom-bg.jpg"
+        "Images": "../img/bg/domdom-bg.jpg",
+        "Video": "https://www.youtube.com/embed/HgDzVFMi238?autoplay=1&loop=1&playlist=HgDzVFMi238&mute=1"
     },
     {
+        "id": "1.5",
         "Title": "Ngày Xưa Có Một Chuyện Tình",
         "Age": "16+",
         "Rated": "9.7",
@@ -87,9 +97,11 @@
         "Poster":"../img/poster/chuyentinh-pt.png",
         "Response": "True",
         "Booking" : "../html/book.html?NXCMCT",
-        "Images": "../img/bg/chuyentinh-bg.jpg"
+        "Images": "../img/bg/chuyentinh-bg.jpg",
+        "Video": "https://www.youtube.com/embed/wGMq-JNTxC4?autoplay=1&loop=1&playlist=wGMq-JNTxC4&mute=1"
     },
     {
+        "id": "1.6",
         "Title": "Tín Hiệu Cầu Cứu",
         "Age": "18+",
         "Rated": "7.8",
@@ -105,9 +117,11 @@
         "Poster":"../img/poster/sos.pt.jpg",
         "Response": "True",
         "Booking" : "../html/book.html?Sos",
-        "Images": "../img/bg/sos-bg.jpg"
+        "Images": "../img/bg/sos-bg.jpg",
+        "Video": "https://www.youtube.com/embed/C4TA8A2WLrw?autoplay=1&loop=1&playlist=C4TA8A2WLrw&mute=1"
     },
     {
+        "id": "1.7",
         "Title": "An Lạc",
         "Age": "k",
         "Rated": "7.3",
@@ -123,10 +137,12 @@
         "Poster":"../img/poster/anlac-pt.jpg",
         "Response": "True",
         "Booking" : "../html/book.html?Anlac",
-        "Images": "../img/bg/anlac-bg.jpg"
+        "Images": "../img/bg/anlac-bg.jpg",
+        "Video": "https://www.youtube.com/embed/e5d99hQeY6k?autoplay=1&loop=1&playlist=e5d99hQeY6k&mute=1"
     },
     {
         "Title": "Đố Anh Còng Được Tôi",
+        "id": "1.8",
         "Age": "18+",
         "Rated": "8.9",
         "Released": "27/09/2024",
@@ -141,10 +157,12 @@
         "Poster":"../img/poster/doanhcongdctoi-pt.jpg",
         "Response": "True",
         "Booking" : "../html/book.html?DACDT",
-        "Images": "../img/bg/doanhcongdctoi-bg.jpg"
+        "Images": "../img/bg/doanhcongdctoi-bg.jpg",
+        "Video": "https://www.youtube.com/embed/JgUWVooKSrA?autoplay=1&loop=1&playlist=JgUWVooKSrA&mute=1"
     },
     {
         "Title": "Domino: Lối Thoát Cuối Cùng",
+        "id": "1.9",
         "Age": "18+",
         "Rated": "8.5",
         "Released": "11/10/2024",
@@ -159,9 +177,11 @@
         "Poster":"../img/poster/domino-pt.jpg",
         "Response": "True",
         "Booking" : "../html/book.html?Domino",
-        "Images": "../img/bg/domino-bg.webp"
+        "Images": "../img/bg/domino-bg.webp",
+        "Video": "https://www.youtube.com/embed/f2FCeOxiEbo?autoplay=1&loop=1&playlist=f2FCeOxiEbo&mute=1"
     },
     {
+        "id": "1.10",
         "Title": "Nhất Quỷ Nhì Ma, Thứ Ba Takagi: Trêu Rồi Yêu",
         "Age": "13+",
         "Rated": "8.8",
@@ -177,9 +197,12 @@
         "Poster":"../img/poster/takagi-pt.jpg",
         "Response": "True",
         "Booking" : "../html/book.html?Takagi",
-        "Images": "../img/bg/takagi-bg.webp"
+        "Images": "../img/bg/takagi-bg.webp",
+        "Video": "https://www.youtube.com/embed/JeRfRVNi28w?autoplay=1&loop=1&playlist=JeRfRVNi28w&mute=1"
+
     },
     {
+        "id": "1.11",
         "Title": "TAEYONG: TỪ TAEYONG ĐẾN TY TRACK",
         "Age": "13+",
         "Rated": "10",
@@ -195,9 +218,11 @@
         "Poster":"../img/poster/taeyong-pt.jpg",
         "Response": "True",
         "Booking" : "../html/book.html?Taeyong",
-        "Images": "../img/bg/taeyong-bg.jpg"
+        "Images": "../img/bg/taeyong-bg.jpg",
+        "Video": "https://www.youtube.com/embed/GjAamf0W5Zg?autoplay=1&loop=1&playlist=GjAamf0W5Zg&mute=1"
     },
     {
+        "id": "1.12",
         "Title": "CÁM",
         "Age": "18+",
         "Rated": "6.4",
@@ -213,7 +238,8 @@
         "Poster":"../img/poster/cam-pt.jpg",
         "Response": "True",
         "Booking" : "../html/book.html?Cam",
-        "Images": "../img/bg/cam-bg.jpg"
+        "Images": "../img/bg/cam-bg.jpg",
+        "Video": "https://www.youtube.com/embed/_8qUFEmPQbc?autoplay=1&loop=1&playlist=_8qUFEmPQbc&mute=1"
     }
 
 ]

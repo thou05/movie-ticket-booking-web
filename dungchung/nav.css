@@ -20,7 +20,7 @@ body{
     --comment-box: #171B27;
     --comment:#555D68;
     --comment-date:#8A8A8A;
-    --warning:#E22C2C;
+    --warning:#E50914;
     --yellow:#EEE62F;
 }
 
@@ -66,7 +66,7 @@ img{
 }
 
 .header .logo h1{
-    color: var(--pink);
+    color: var(--warning);
     font-size: 2.4rem;
     cursor: pointer;
     font-family: 'Lemon',cursive;
@@ -98,7 +98,15 @@ img{
     -o-transition: color 0.25s ease-in-out;
 }
 .navBar ul li a:hover{
-    color: var(--pink);
+    color: var(--warning);
+}
+
+.nav-items .list a.active {
+    border-bottom: 2px solid var(--warning);
+}
+
+.nav-items .user a.active {
+    border-bottom: 2px solid var(--warning);
 }
 
 .nav-items li {
@@ -140,7 +148,7 @@ img{
     position: absolute;
     width: 320px;
     height: 270px;
-    /* border: 1px solid #fff; */
+    display: none;    /* border: 1px solid #fff; */
     right: 0;
     top: 40px;
     z-index: 99999;
@@ -246,7 +254,7 @@ img{
 }
 
 .navBar .user i:hover{
-    color: var(--pink);
+    color: var(--warning);
 }
 
 .navBar .close-btn i{

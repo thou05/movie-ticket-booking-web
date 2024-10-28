@@ -362,11 +362,37 @@ body{
 }
 
 .swiper-container .movie-rating .rect{
-    /* border: 1px solid #fff; */
-    padding: 0.6rem;
-    border-radius: 30%;
-    background-color: var(--warning);
+    border-radius: 20%;
+    /* background-color: var(--warning); */
 }
+
+.rect[data-age="p"] {
+    background-color: #579b41;
+    text-transform: uppercase;
+    padding: 2.5px 10px;
+}
+
+.rect[data-age="k"] {
+    background-color: #006ee6;
+    text-transform: uppercase;
+    padding: 2.5px 10px;
+}
+
+.rect[data-age="13+"] {
+    padding: 0.6rem;
+    background-color: #ddbc3f; 
+}
+
+.rect[data-age="16+"] {
+    padding: 0.6rem;
+    background-color: #e88021;
+}
+
+.rect[data-age="18+"] {
+    padding: 0.6rem;
+    background-color: #9b2020;
+}
+
 
 .swiper-container .movie-btn{
     display: flex;

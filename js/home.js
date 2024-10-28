@@ -7,10 +7,10 @@ fetch(json_url)
     .then(response => response.json())
     .then((data) => {
         data.forEach(element => {
-            let { Title, Rated, Released, Poster, Genre, url } = element;
+            let {id, Title, Rated, Released, Poster, Genre, url } = element;
             let card = document.createElement('a');
             card.classList.add('card1');
-            card.href = url;    
+            card.href = `../html/film-detail.html?id=${id}`;    
             card.innerHTML = `
                 <img src="${Poster}" alt="">
                 <div class="cont">
@@ -27,25 +27,43 @@ fetch(json_url)
         search_input.addEventListener('keyup', () => {
             let filter = search_input.value.toUpperCase();
             let a = search.getElementsByTagName('a');
-
+            let isAnyVisible = false;  
+        
             for (let index = 0; index < a.length; index++) {
                 let b = a[index].getElementsByClassName('titl')[0];
-                // console.log(a.textContent)
                 let TextValue = b.textContent || b.innerText;
+                
                 if (TextValue.toUpperCase().indexOf(filter) > -1) {
-                    a[index].style.display = "flex";
-                    search.style.visibility = "visible";
-                    search.style.opacity = 1;
+                    a[index].style.display = "flex";  
+                    isAnyVisible = true;  
                 } else {
-                    a[index].style.display = "none";
-                }
-                if (search_input.value == "") {
-                    search.style.visibility = "hidden";
-                    search.style.opacity = 0;
+                    a[index].style.display = "none";  
                 }
             }
-        })
+        
+            if (isAnyVisible) {
+                search.style.display = "block";  
+            } else {
+                search.style.display = "none";  
+            }
+        
+            if (search_input.value == "") {
+                search.style.display = "none";
+            }
+        });
+        document.addEventListener('click', function (event) {
     
+            if (!search_input.contains(event.target) && !search.contains(event.target)) {
+                search_input.value = ''; 
+                search.style.display = 'none'; 
+            }
+        });
+    
+        search_input.addEventListener('focus', function () {
+            if (search_input.value != "") {
+                search.style.display = "block"; 
+            }
+        });
 
     });
 
@@ -60,14 +78,14 @@ fetch(json_url)
                     card.classList.add('cards');
                     card.innerHTML = `
                         <div class="card-img">
-                            <a href="#"><img src="${element.Poster}" alt="${element.Title}"></a>
+                            <a href="../html/film-detail.html?id=${element.id}"><img src="${element.Poster}" alt="${element.Title}"></a>
                             <div class="img-title">
                                 <h4>${element.Rated}<i class="fa-solid fa-star"></i></h4>
                                 <p>Rated</p>
                             </div>
                         </div>
                         <div class="card-title">
-                            <a href="#"><h3>${element.Title}</h3></a>
+                            <a href="../html/film-detail.html?id=${element.id}"><h3>${element.Title}</h3></a>
                             <p>${element.Genre}</p>
                         </div>
                     `;
@@ -127,13 +145,13 @@ fetch('../json/popular-movie.json')
                         <div>
                             <p>${movie.Runtime}</p>
                         </div>
-                        <div class="rect">
+                        <div class="rect" data-age="${movie.Age}">
                             <p>${movie.Age}</p>
                         </div>
                     </div>
                     <div class="movie-btn">
                         <a href="${movie.Booking}" ><button class="btn-1">Đặt Vé</button></a>
-                        <a href="#"><button class="btn-2">Xem Chi Tiết</button></a>
+                        <a href="../html/film-detail.html?id=${movie.id}"><button class="btn-2">Xem Chi Tiết</button></a>
                     </div>
                 </div>
             `;
@@ -256,8 +274,7 @@ window.addEventListener('resize', function() {
 });
 
 window.onload = function() {
-    const currentPage = window.location.pathname;
-    
+    const currentPage = window.location.pathname.split('/').pop(); 
     const navLinks = document.querySelectorAll('.nav-items a');
 
     navLinks.forEach(link => {
@@ -265,7 +282,8 @@ window.onload = function() {
     });
 
     navLinks.forEach(link => {
-        if (link.getAttribute('href').includes(currentPage)) {
+        const linkPage = link.getAttribute('href').split('/').pop(); 
+        if (linkPage === currentPage) {
             link.classList.add('active');
         }
     });
