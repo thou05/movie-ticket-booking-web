@@ -1,0 +1,730 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+i{
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+img{
+    cursor: pointer;
+}
+:root{
+    --pink: #DE5D83;
+    --black: #101116;
+    --gray: #bebebe;
+    --light-gray: #d9d9d9;
+    --comment-box: #171B27;
+    --comment:#555D68;
+    --comment-date:#8A8A8A;
+    --warning:#E50914;
+    --yellow:#EEE62F;
+}
+
+/* dark */
+body{
+    background-color: #0B1118;
+    box-sizing: border-box;
+}
+
+/* .navbar{
+    position: sticky;
+    top: 0;
+} */
+
+/* #header{
+    position: fixed;
+    top: 0;
+    z-index:2;
+} */
+
+/* .movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+} */
+
+/* light */
+/* .card-movie{
+    padding: 0 !important;
+	border-radius: 10px;
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15   px 0 rgba(0, 0, 0, 0.19);
+    transition: all 1s ease-in-out;
+} */
+
+/* dark */
+
+.container-header{
+    width: 100%;
+    height: 5vh;
+    z-index: 55;
+}
+.container-header .header{
+    width: 100%;
+    height: 70px;
+    padding: 2rem 10%;
+    padding-top: 3rem;
+    z-index: 55;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+}
+
+.header .logo h1{
+    color: var(--warning);
+    font-size: 2.4rem;
+    cursor: pointer;
+    font-family: 'Lemon',cursive;
+}
+.navBar .nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav-items a.active {
+    border-bottom: 2px solid var(--warning);
+}
+
+.navBar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navBar ul li a{
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out;
+}
+.navBar ul li a:hover{
+    color: var(--warning);
+}
+
+.nav-items a.active {
+    border-bottom: 2px solid var(--warning);
+}
+
+.nav-items li {
+    position: relative;
+    margin: 0 1.5rem;
+}
+
+
+.search_user {
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.search_user input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255, .3);
+    color: #fff;
+    margin-right: 20px;
+    transition: background 0.3s;
+}
+
+
+.search_user input::placeholder {
+    color: #fff;
+}
+
+.search_user img {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+.search_user .search {
+    position: absolute;
+    width: 320px;
+    height: 270px;
+    /* border: 1px solid #fff; */
+    right: 0;
+    top: 40px;
+    z-index: 99999;
+    overflow-y: auto;
+    display: none;
+}
+
+.search_user .search i {
+    font-size: 90% !important;
+}
+
+.search_user .search::-webkit-scrollbar {
+    width: 5px;
+    background: rgb(255, 255, 255, .3);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.search_user .search::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgb(255, 255, 255, .4);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.search_user .search:hover::-webkit-scrollbar {
+    visibility: visible;
+}
+
+.search_user .search:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.search_user .search .card1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 3px 0px;
+    text-decoration: none;
+    display: none;
+    /* border: 1px solid white; */
+    /* z-index: 100000; */
+    /* transition: background 0.3s; */
+}
+
+.search_user .search .card1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.search_user .search .card1 img {
+    width: 28px;
+    height: 90%;
+    border-radius: 2px;
+    margin-left: 8px;
+}
+
+.search_user .search .card1 .cont {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.search_user .search .card1 .cont h3 {
+    font-size: 15px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+}
+
+.search_user .search .card1 .cont p {
+    font-size: 10px;
+    color: rgb(255, 255, 255, .8);
+}
+
+.search_user .search .card1 .cont span {
+    background: yellow;
+    color: #000;
+    padding: 0px 3px;
+    margin: 0px 5px 0px 10px;
+    font-weight: 500;
+}
+
+
+
+.navBar .user i{
+    font-size: 1.3rem;
+    color: #fff;
+    transition: color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out;
+}
+
+.navBar .user i:hover{
+    color: var(--warning);
+}
+
+.navBar .close-btn i{
+    font-size: 2.4rem;
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    display: none;
+}
+
+.header .navBar .open-btn{
+    position: absolute;
+    right: 4rem;
+    top: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+}
+
+.movie-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-movie{
+    padding: 0 !important;
+	border-radius: 10px;
+    border: #747070;
+    transition: all 0.6s ease-in-out;
+    background-color: rgb(37, 37, 37);
+    overflow: hidden;
+
+}
+
+
+.card-movie:hover{
+    transform: scale(1.1);
+}
+
+.card-title{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 100%;  /* or a specific width like 150px */
+    display: block;    /* Add this line */
+    
+}
+.card-title, .movie_info{
+    color: rgb(199, 195, 195);
+}
+
+.card-movie img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* height: 30vh; */
+    object-fit:cover;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    /* cursor:pointer; */
+}
+
+
+/* --------------- */
+.movie-list {
+    margin-top: 1rem;
+}
+
+.card-movie {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    transition: transform 0.3s;
+}
+
+.card-movie:hover {
+    transform: scale(1.05);
+}
+
+.card-title, .movie_info {
+    color: rgb(199, 195, 195);
+}
+
+
+
+
+
+.movie_genre{
+    color: #6d6b6b;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 100%;  /* or a specific width like 150px */
+    display: block;    /* Add this line */
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.movie_star{
+    padding-top: 5px;
+    margin-left: 10px; 
+    
+}
+.movie_info{
+    color: #646363;
+    padding-left: 13px;
+    
+}
+
+.movie_info i{
+    font-size: 13px;
+}
+.card-title{
+    cursor:pointer;
+}
+
+.btn-buy{
+    background-color: #db0510;
+    font-size: 0.9rem;
+}
+
+
+/* ------------ */
+
+/* .status-container {
+    background-color: rgb(36, 36, 36);
+    padding: 1rem 2rem;
+} */
+
+/* .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+} */
+
+
+/* -------------------- */
+
+
+.status-container {
+    padding: 1rem 2rem; /* Khoảng cách bên trong (top/bottom và left/right) */
+    border-radius: 50px; 
+    margin-top: 2rem; /* Khoảng cách phía trên */
+    text-align: center; /* Căn giữa các mục */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.status-nav {
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    width: 100%; /* Chiếm hết chiều ngang container */
+    max-width: 700px; 
+    margin-bottom: 0;
+    
+}
+
+.status-item {
+    margin: 0 1rem; /* Khoảng cách giữa các mục */
+}
+
+.nav-link {
+    color: #fff;
+    padding: 0.75rem 1.5rem; /* Khoảng cách bên trong của mỗi mục */
+    font-weight: 700; /* Đậm chữ */
+    text-transform: uppercase; /* Viết hoa chữ */
+    font-size: 1.1rem; /* Kích cỡ chữ */
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    
+}
+
+.nav-link:hover {
+    color: #ffffff !important; /* Giữ màu trắng cho chữ */
+    border: 2px solid #e50914;
+    background-color: #e50914;
+}
+
+.nav-link.active {
+    border: 2px solid #e50914;
+    border-radius: 50px;
+    color: #e50914 !important; 
+
+}
+
+
+
+
+
+.movie-age {
+    position: absolute;
+    top: 0.5rem; /* Cách từ trên xuống */
+    left: 0.5rem; /* Cách từ bên trái */
+    padding: 0.25rem 0.5rem; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    color: white; /* Màu chữ trắng */
+    font-weight: bold; /* Đậm chữ */
+    font-size: 0.7rem;
+    z-index: 1; /* Đặt lên trên các phần tử khác */
+}
+
+/* Các quy tắc khác cho movie-age nếu cần */
+
+
+.movie-age[data-age="p"] {
+    background-color: #579b41;
+    text-transform: uppercase;
+    padding: 2.5px 10px;
+}
+
+.movie-age[data-age="k"] {
+    background-color: #006ee6;
+    text-transform: uppercase;
+    padding: 2.5px 10px;
+}
+
+.movie-age[data-age="13+"] {
+    background-color: #ddbc3f; 
+}
+
+.movie-age[data-age="16+"] {
+    background-color: #e88021;
+}
+
+.movie-age[data-age="18+"] {
+    background-color: #9b2020;
+}
+
+
+.footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5% 3% 5%;
+    /* background-color: #171B27; */
+    color: #fff;
+    border-top: 5px solid #171B27;
+    margin-top: 3%;
+}
+.footer .footer-advise {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.footer .footer-advise ul{
+    display: flex;
+    margin-left: -5%;
+}
+
+.footer-advise ul li {
+    display: inline-block;
+    margin: 0 10px 10px 0px;
+}
+
+.footer-advise ul li a {
+    padding: 0 10px 5px 0;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out;
+}
+
+.footer-advise ul li:hover a {
+    color: var(--warning);
+}
+
+.footer-advise .advise-text {
+    margin-top: 10px;
+}
+
+.footer-advise .advise-text p {
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.footer .footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.footer-social i{
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--warning);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.footer-social i:hover{
+    background-color: var(--black);
+    color: var(--warning);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.footer h4{
+    margin-bottom: 20px;
+}
+
+.footer .moblie-app{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer .moblie-app img {
+    width: 40%;
+}
+
+
+/* for Phone: width < 740px */
+@media only screen and (max-width: 739px) {
+    .status-container {
+        padding: 0.5rem 1rem; /* Giảm padding cho màn hình nhỏ */
+    }
+   
+
+    .nav-link {
+        padding: 0.4rem 0.4rem;
+        font-size: 0.8rem; /* Giảm kích cỡ chữ */
+    }
+    .btn-buy{
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    
+    .card-title{
+        font-size: 1.1rem;
+    }
+    .movie_genre{
+        font-size: 0.9rem;
+    }
+
+    /* .card-movie{
+        width: 216px;
+        height: 433px;
+        box-sizing: border-box;
+    } */
+
+
+    
+}
+
+/* for Tablet: >= 740 & < 1024 */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* for PC: >= 1024 */
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media(max-width:1200px){
+    .header .logo {
+        position: relative;
+        left: -32%;
+    }
+    .header .navBar .nav-items{
+        display: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content:space-around ;
+        align-items: center;
+        background-color: rgba(20, 20, 20, 0.5);
+        backdrop-filter: blur(10px);
+        transition: top 1s ease;
+        -webkit-transition: top 1s ease;
+        -moz-transition: top 1s ease;
+        -ms-transition: top 1s ease;
+        -o-transition: top 1s ease;
+    }
+    .header .navBar .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: -15%;
+    }
+    
+    .header .navBar .list a{
+        font-size: 1.35rem;
+    }
+    .navBar .list a:hover{
+        color: var(--comment-box);
+    }
+    .header .navBar .list .close-btn i{
+        display: block;
+    }
+    .header .navBar .open-btn{
+        display: block;
+    }
+    .navBar .user{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 55;
+        top: -38%;
+    }
+
+    .search_user .search {
+        position: absolute;
+        width: 320px;
+        height: 270px;
+        /* border: 1px solid #fff; */
+        right: -70px;
+        top: 40px;
+        z-index: 99999;
+        overflow-y: auto;
+    }
+    .navBar .user li i{
+        font-size: 1.5rem;
+    }
+    .navBar .user li i:hover{
+        color: var(--comment-box);
+    }
+
+
+    .footer{
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    
+}
+
+/* ------------------- */

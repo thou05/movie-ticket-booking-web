@@ -1,0 +1,341 @@
+/*Google Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --pink: #e50914;
+    --black: #101116;
+    --gray: #bebebe;
+    --light-gray: #d9d9d9;
+    --comment-box: #171B27;
+    --comment:#555D68;
+    --comment-date:#8A8A8A;
+    --warning:#E22C2C;
+    --yellow:#EEE62F;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--comment-box);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--comment);
+}
+
+
+a{
+    text-decoration: none;
+}
+i{
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+img{
+    cursor: pointer;
+}
+/* Cấu hình chung */
+body {
+    background: #0B1118;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.td {
+    color: #e50914;
+    font-size: 90px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Lemon',cursive;
+}
+.main-container h2{
+    color: #e50914;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Lemon',cursive;
+    margin-top: 30px;
+}
+.main-container h3{
+    font-size: 21px;
+}
+/* CSS cho thanh điều hướng dọc */
+.sidebar {
+    /* position: fixed;  */
+    top: 110px;
+    left: 100px;
+    width: 200px;
+    /* height: 100%; Chiều cao bằng 100% màn hình */
+    margin-top: 50px;
+    border-right: 1px solid #8A8A8A;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e50914;
+    color: #fff;
+}
+.sidebar .active{
+    background-color: #e50914;
+    color: #fff;
+}
+/* Nội dung chính được đẩy sang phải để không bị thanh điều hướng che khuất */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    margin-top: -370px;
+}
+
+.main-content section {
+    margin-bottom: 40px;
+}
+
+
+.section-content.hidden {
+    display: none;
+}
+.Hotline{
+    font-weight: bold;
+}
+section .container {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần theo chiều dọc */
+    max-width: 400px; /* Điều chỉnh chiều rộng container */
+    margin: 0 auto; /* Căn giữa trang */
+    gap: 20px; /* Khoảng cách giữa các phần */
+    height: 100%;
+  }
+  
+  .city-selection,
+  .feedback-info {
+    display: flex;
+    flex-direction: column; /* Các phần tử con cũng xếp theo chiều dọc */
+  }
+  
+  label {
+    margin-bottom: 5px; /* Khoảng cách giữa label và input */
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    margin-bottom: 15px; /* Khoảng cách giữa các input */
+    width: 100%; /* Đảm bảo input và select rộng bằng nhau */
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .main-container img {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bo góc cho input và textarea */
+    font-size: 16px;
+}
+textarea {
+    resize: vertical; /* Cho phép thay đổi chiều cao textarea */
+}
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Đặt hai nút trên cùng một hàng */
+    gap: 20px; /* Tạo khoảng cách giữa hai nút */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #e50914;
+    border: 2px solid #e50914;
+    border-radius: 5px; /* Bo góc cho nút */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hiệu ứng chuyển màu và zoom */
+}
+
+.button:hover {
+    background-color: #e50914;
+    color: #fff;
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+.button:active {
+    transform: scale(0.98); /* Thu nhỏ nhẹ khi nhấn */
+}
+.main-content section ol .cham{
+    margin-left: 40px;
+}
+.main-content section ol img{
+    width: 500px;
+}
+.main-content section ol .gach{
+    list-style-type: disc;
+}
+.main-content section p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-content h1, h2, h3{
+    margin-bottom: 20px;
+}
+.main-content section ol li{
+    margin-bottom: 20px;
+}
+.main-content section ul{
+    margin-bottom: 20px;
+}
+.main-content section ul li{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1327px) {
+    .main-container h2 {
+        color: #e50914;
+        font-size: 35px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 1185px) {
+    .td{
+        color: #e50914;
+        font-size: 70px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+    }
+    .main-container h2 {
+        color: #e50914;
+        font-size: 21px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 871px) {
+    .td{
+        color: #e50914;
+        font-size: 50px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+    }
+    .main-container h2 {
+        color: #e50914;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 720px) {
+    .td{
+        color: #e50914;
+        font-size: 40px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+    }
+    .main-container h2 {
+        color: #e50914;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+        margin-top: 30px;
+    }
+}
+@media (max-width:600px) {
+    .td{
+        color: #e50914;
+        font-size: 40px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 0 auto;
+        /* height: 100vh; */
+        display: inline-block;
+        vertical-align: bottom;
+        border-bottom: 1px solid #E22C2C;
+        border-right: none;
+    }
+    .main-content{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+        padding-top: 370px; /* Adjust this value to move the text down */
+    }
+}
+@media (max-width:375px) {
+    .td{
+        color: #e50914;
+        font-size: 30px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Lemon',cursive;
+    }
+    .sidebar {
+        width: 250px;
+        left: 60px;
+        /* height: 100vh; */
+        background-color: #000;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .main-content{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+        padding-top: 370px; /* Adjust this value to move the text down */
+    }
+}

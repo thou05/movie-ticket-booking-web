@@ -101,6 +101,14 @@ img{
     color: var(--warning);
 }
 
+.nav-items .list a.active {
+    border-bottom: 2px solid var(--warning);
+}
+
+.nav-items .user a.active {
+    border-bottom: 2px solid var(--warning);
+}
+
 .nav-items li {
     position: relative;
     margin: 0 1.5rem;
@@ -140,7 +148,7 @@ img{
     position: absolute;
     width: 320px;
     height: 270px;
-    /* border: 1px solid #fff; */
+    display: none;    /* border: 1px solid #fff; */
     right: 0;
     top: 40px;
     z-index: 99999;

@@ -1,0 +1,191 @@
+/*Google Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --pink: #e50914;
+    --black: #101116;
+    --gray: #bebebe;
+    --light-gray: #d9d9d9;
+    --comment-box: #171B27;
+    --comment:#555D68;
+    --comment-date:#8A8A8A;
+    --warning:#E22C2C;
+    --yellow:#EEE62F;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--comment-box);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--comment);
+}
+
+
+a{
+    text-decoration: none;
+}
+i{
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+img{
+    cursor: pointer;
+}
+body{
+    background: #0B1118;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+}
+
+.main {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    /* margin-top: 150px; */
+}
+
+.main h1{
+    text-align: center; /* Căn giữa nội dung của thẻ h1 */
+    margin: 20px auto; /* Căn giữa theo chiều ngang */
+    color: #e50914; /* Màu chữ */
+    border: 2px solid #e50914; /* Viền với độ dày 2px và màu xanh lá */
+    padding: 10px 20px; /* Khoảng cách giữa chữ và viền */
+    width: fit-content; /* Đảm bảo viền vừa với nội dung */
+    border-radius: 8px; /* Bo tròn các góc viền */
+    box-shadow: 0 4px 8px #e50914;
+}
+article a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #e50914;
+    text-decoration: none;
+}
+main{
+    justify-content: space-between; /* Căn đều khoảng cách giữa các bài viết */
+    gap: 20px; /* Khoảng cách giữa các bài viết */
+    padding: 20px; /* Khoảng đệm cho phần chứa */
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa toàn bộ nội dung chính */
+    display: flex;
+}
+article{
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(248, 247, 247);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Khoảng cách giữa các bài viết */
+}
+article:hover {
+    transform: translateY(-10px); /* Hiệu ứng khi di chuột qua */
+}
+article img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+    height: auto;
+    border-radius: 8px;
+}
+article p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      gap: 20px; /* Khoảng cách giữa các bài viết trên di động */
+    }
+}
+/* Các thiết lập modal đã có trước */
+.modal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Căn giữa theo chiều ngang */
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; /* Chiều rộng 90% cho màn hình nhỏ */
+    max-width: 1000px; /* Giới hạn chiều rộng tối đa */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #000;
+}
+@media (max-width: 768px) {
+    .modal-content {
+        margin-top: 20%;
+    }
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Flexbox để chia ảnh và chữ */
+.modal-body {
+    display: flex;
+    align-items: flex-start; /* Căn phần tử con lên đầu để ảnh và h2 ngang hàng */
+    gap: 20px; /* Khoảng cách giữa ảnh và chữ */
+}
+.modal-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Để logo căn giữa theo ảnh */
+}
+.modal-image img {
+    max-width: 300px; /* Giới hạn kích thước ảnh */
+    width: 100%;
+    border-radius: 8px;
+}
+
+.modal-text {
+    flex: 1; /* Để phần chữ chiếm khoảng trống còn lại */
+}
+
+.modal-text h2 {
+    margin-top: 0;
+}
+.logo-container {
+    display: flex;
+    justify-content: center; /* Căn logo theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa các logo */
+    margin-top: 10px;
+}
+.main .logo {
+    width: 30px; /* Kích thước logo */
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Tạo hiệu ứng khi di chuột */
+}
+/* Hiệu ứng khi di chuột vào logo */
+.main .logo:hover {
+    transform: scale(1.2); /* Phóng to logo khi di chuột */
+    filter: brightness(1.5); /* Tăng độ sáng khi di chuột */
+}
