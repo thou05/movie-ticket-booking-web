@@ -2,6 +2,7 @@ let search = document.getElementsByClassName('search')[0];
 let search_input = document.getElementById('search_input');
 let json_url = "../json/movie.json";    
 
+
 fetch(json_url)
     .then(response => response.json())
     .then((data) => {
@@ -10,6 +11,7 @@ fetch(json_url)
             let card = document.createElement('a');
             card.classList.add('card1');
             card.href = `../html/film-detail.html?id=${id}`;    
+
             card.innerHTML = `
                 <img src="${Poster}" alt="">
                 <div class="cont">
