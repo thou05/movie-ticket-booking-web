@@ -97,9 +97,12 @@ fetch(json_url)
                     nav: true,
                     responsive: {
                         0: {
+                            items: 1
+                        },
+                        500: {
                             items: 2
                         },
-                        600: {
+                        700: {
                             items: 3
                         },
                         800: {
