@@ -322,6 +322,26 @@ h1.movie-title {
     line-height: 1.2;
 }
 
+
+/* METAAAAA-------------------------- */
+
+.meta {
+    display: flex;         
+    flex-wrap: wrap;    
+}
+
+.movie-meta-item {
+    white-space: nowrap;    /* không cho từng mục xuống dòng */
+}
+
+.meta {
+    overflow-wrap: break-word; /* Cho phép xuống dòng cho các từ dài */
+    display: inline-flex;    
+}
+
+
+
+
 .movie-meta {
     font-size: 1.2rem;
     font-weight: 400;
@@ -345,6 +365,10 @@ h5.movie-content{
     line-height: 1.2;
 }
 
+.movie-plot-short, .movie-plot-full{
+    color: #ced4da; 
+}
+
 .buy-btn {
     font-size: 0.9rem;
     padding: 0.3rem 1.5rem;
@@ -363,14 +387,14 @@ h5.movie-content{
     transform: scale(1.05); 
 }
 
-.info-btn{
+/* .info-btn{
     font-size: 0.8rem;
     border-radius: 50px;
     text-transform: uppercase;
     margin-top: 1rem;
     color:#ced4da;
     font-weight: bold;
-}
+} */
 
 .feature__bg::before {
     content: "";
@@ -486,14 +510,14 @@ h5.movie-content{
     margin: 0 5px;
 }
 
-/* ------------- */
+/*INFO WRAP ------------- */
 .info-wrap {
     z-index: 2;
     position: relative;
 }
 
 .more-info {
-    display: none;
+    /* display: none; */
     margin-top: 1rem;
 
     
@@ -518,6 +542,44 @@ h5.movie-content{
 }
 
 
+.info-wrap {
+    z-index: 2;
+    position: relative;
+    padding: 20px; 
+    border-radius: 12px; 
+    margin-top: 20px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(145deg, #1a1f25, #262b2f);
+}
+
+h5.movie-content{
+    color: var(--warning);
+}
+
+.info-item {
+    margin-bottom: 1.5rem;
+}
+
+.info-item h5 {
+    font-size: 1.1rem;
+    font-weight: 600; 
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    padding-bottom: 0.5rem; 
+   
+}
+
+.info-item p {
+    font-size: 0.95rem;
+    color: #f1f1f1; 
+    margin: 0;
+}
+
+.item-last{
+    margin-bottom: 1px;
+}
+
+/*FOOTER ---------------------------------------------------- */
 
 .footer{
     position: relative;
@@ -528,6 +590,7 @@ h5.movie-content{
     /* background-color: #171B27; */
     color: #fff;
     border-top: 5px solid #171B27;
+   margin-top: 2rem;
 }
 .footer .footer-advise {
     display: flex;
@@ -668,13 +731,24 @@ h5.movie-content{
       
     }
 
-    .info-btn{
+    h1.movie-title{
+        margin-top: 5px;
+        font-size: 1.5rem;
+    }
+
+    .movie-meta-item{
         font-size: 0.7rem;
+    }
+
+    .movie-desc{
+        font-size: 0.9rem;
     }
 
     .buy-btn{
         font-size: 0.8rem;
     }
+
+   
 
 }
 
