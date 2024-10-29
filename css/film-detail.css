@@ -273,17 +273,17 @@ body{
 }
 .feature {
     position: relative;
-    min-height: 100vh; /* Đảm bảo chiếm ít nhất toàn bộ chiều cao màn hình */
-    width: 100vw; /* Sửa từ 100wh thành 100vw */
+    min-height: 100vh; 
+    width: 100vw; 
     overflow: hidden;
 }
 
 .feature__bg {
-    top: 0; /* Dính lên đầu */
-    left: 0; /* Dính vào bên trái */
-    width: 100%; /* Chiều rộng 100% */
-    height: 100%; /* Chiều cao 100% */
-    overflow: hidden; /* Ẩn bất kỳ phần nào không muốn hiển thị */
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
 }
 
 
@@ -302,15 +302,15 @@ body{
 
 .feature-content {
     position: absolute;
-    bottom: 5%; /* Đẩy phần chữ lên một chút để cách xa cạnh dưới */
-    left: 5%; /* Đẩy phần chữ về bên trái */
-    transform: none; /* Bỏ hiệu ứng dịch sang trái */
-    text-align: left; /* Căn lề trái nội dung */
-    width: 80%; /* Điều chỉnh kích thước khối nội dung */
+    bottom: 5%;
+    left: 5%; 
+    transform: none; 
+    text-align: left; 
+    width: 80%; 
     padding: 2rem;
     z-index: 1;
     color: white;
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Chỉ giữ hiệu ứng đổ bóng chữ */
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); 
 }
 
 h1.movie-title {
@@ -359,17 +359,12 @@ h5.movie-content{
 }
 
 .buy-btn:hover {
-    background-color: #c82333; /* Màu khi hover giữ nguyên */
-    transform: scale(1.05); /* Hiệu ứng zoom khi hover */
+    background-color: #c82333;
+    transform: scale(1.05); 
 }
 
 .info-btn{
     font-size: 0.8rem;
-    /* padding: 0.5rem 1.5rem; */
-    /* color: white; */
-
-    /* border: none; */
-    /* white-space: nowrap; */
     border-radius: 50px;
     text-transform: uppercase;
     margin-top: 1rem;
@@ -389,29 +384,29 @@ h5.movie-content{
 }
 
 .video-onl {
-    position: absolute; /* Đặt video ở vị trí tuyệt đối */
-    top: 0; /* Dính lên đầu */
+    position: absolute; 
+    top: 0; 
     left: 0;
     width: 100%;
-    height: 100%; /* Chiều cao toàn bộ viewport */
+    height: 100%;
 }
 
 .video-onl iframe {
     position: absolute;
     top: 0;
     left: 0; 
-    height: 100vh; /* Chiều cao 100% viewport */
+    height: 100vh; 
     object-fit: cover; /* Đảm bảo video cover toàn bộ */
 }
 
 
-/* Age color coding */
+/* Age------------------ */
 .movie-age {
     display: inline-block;
     padding: 0.5rem;
     border-radius: 5px;
     color: white;
-    font-weight: bold; /* Đậm chữ */
+    font-weight: bold; 
     font-size: 0.9rem;
 }
 
@@ -450,17 +445,17 @@ h5.movie-content{
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline;
-    max-width: 400px;  /* Điều chỉnh kích thước cho phù hợp */
+    max-width: 400px;  
 }
 
 .movie-plot-full {
-    display: none;  /* Ẩn phần nội dung đầy đủ ban đầu */
+    display: none;
 }
 
 .toggle-text {
     color: rgb(192, 194, 59);
     cursor: pointer;
-    display: inline;  /* Hiển thị nút "Xem thêm" */
+    display: inline; 
     font-size: 1rem;
     margin-left: 5px;
     text-align: right;
@@ -477,10 +472,10 @@ h5.movie-content{
 
 .movie-meta-item {
     font-weight: bold;
-    color: #1f1e1e; /* Màu chữ chính */
-    padding: 0.2rem 0.5rem; /* Khoảng cách xung quanh */
-    border-radius:75px; /* Bo góc */
-    background-color: rgba(255, 255, 255, 0.596); /* Nền trắng nhẹ */
+    color: #1f1e1e; 
+    padding: 0.2rem 0.5rem; 
+    border-radius:75px; 
+    background-color: rgba(255, 255, 255, 0.596);
     font-size: 0.95rem;
     
 }
@@ -492,6 +487,10 @@ h5.movie-content{
 }
 
 /* ------------- */
+.info-wrap {
+    z-index: 2;
+    position: relative;
+}
 
 .more-info {
     display: none;
@@ -502,20 +501,20 @@ h5.movie-content{
 
 
 .info-item {
-    margin-bottom: 1rem; /* Khoảng cách giữa các mục thông tin */
+    margin-bottom: 1rem; 
 }
 
 .info-item h5 {
-    font-size: 1rem; /* Kích thước font cho tiêu đề mục */
-    font-weight: 600; /* Đậm hơn */
-    color: #f8f9fa; /* Màu chữ tiêu đề */
-    margin-bottom: 0.5rem; /* Khoảng cách dưới tiêu đề */
+    font-size: 1rem;
+    font-weight: 600; 
+    color: #f8f9fa; 
+    margin-bottom: 0.5rem;
 }
 
 .info-item p {
-    font-size: 0.9rem; /* Kích thước font cho nội dung */
-    color: #ced4da; /* Màu chữ cho nội dung */
-    margin: 0; /* Bỏ margin để căn lề tốt hơn */
+    font-size: 0.9rem;
+    color: #ced4da; 
+    margin: 0;
 }
 
 
@@ -650,13 +649,13 @@ h5.movie-content{
     
 
     .movie-meta-item, .movie-meta-separator {
-        flex: 1 1 100%; /* Mỗi phần tử chiếm toàn bộ chiều rộng */
+        flex: 1 1 100%;
         text-align: left;
-        margin-bottom: 0.5rem; /* Khoảng cách giữa các hàng */
+        margin-bottom: 0.5rem; 
     }
 
     .movie-meta-separator {
-        display: none; /* Ẩn dấu phân cách trên màn hình nhỏ */
+        display: none; 
     }
     
 }
@@ -676,7 +675,7 @@ h5.movie-content{
     .buy-btn{
         font-size: 0.8rem;
     }
-    
+
 }
 
 /* for Tablet: >= 740 & < 1024 */
