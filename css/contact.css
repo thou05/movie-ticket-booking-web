@@ -52,6 +52,7 @@ body {
 .main-container {
     width: 80%;
     margin: 0 auto;
+    margin-top: 5%;
 }
 .td {
     color: #e50914;
@@ -144,7 +145,7 @@ section .container {
     margin-bottom: 5px; /* Khoảng cách giữa label và input */
   }
   
-  input, select, textarea {
+  .main-container input, select, textarea {
     padding: 10px;
     margin-bottom: 15px; /* Khoảng cách giữa các input */
     width: 100%; /* Đảm bảo input và select rộng bằng nhau */
@@ -167,7 +168,7 @@ section .container {
     margin-top: 10px;
     margin-bottom: 15px;
   }
-  input, textarea {
+ .main-container input, textarea {
     padding: 10px;
     margin-bottom: 15px;
     width: 100%;

@@ -59,7 +59,7 @@ body{
     z-index: 55;
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
 }
@@ -85,12 +85,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.0rem;
 }
 
 .navBar ul li a{
     color: #fff;
     font-size: 1.15rem;
+    white-space: nowrap;
     font-weight: 600;
     transition: color 0.25s ease-in-out;
     -webkit-transition: color 0.25s ease-in-out;
@@ -766,6 +767,9 @@ body{
 }
 
 @media(max-width:1200px){
+    .container .header{
+        justify-content: space-evenly;
+    }
     .header .logo {
         position: relative;
         left: -32%;

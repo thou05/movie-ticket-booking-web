@@ -53,6 +53,19 @@ function resetForm() {
         } else {
             showSectionAndActivateLink('gioithieu');  
         }
+        const currentPage = window.location.pathname.split('/').pop().split('#')[0];
+        const navLinks = document.querySelectorAll('.nav-items a');
+    
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+    
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute('href').split('/').pop().split('#')[0];
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
     }
 
     window.addEventListener('hashchange', function() {

@@ -74,7 +74,7 @@ body{
     z-index: 55;
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
 }
@@ -649,6 +649,9 @@ body{
 }
 
 @media(max-width:1200px){
+    .container .header{
+        justify-content: space-evenly;
+    }
     .header .logo {
         position: relative;
         left: -32%;
