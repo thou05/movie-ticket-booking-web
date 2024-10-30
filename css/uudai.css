@@ -149,17 +149,19 @@ article p {
     cursor: pointer;
 }
 
-/* Flexbox để chia ảnh và chữ */
 .modal-body {
     display: flex;
-    align-items: flex-start; /* Căn phần tử con lên đầu để ảnh và h2 ngang hàng */
+    align-items: center; /* Căn phần tử con để ảnh và chữ thẳng hàng */
     gap: 20px; /* Khoảng cách giữa ảnh và chữ */
+    flex-wrap: wrap; /* Để ảnh và chữ tự xuống hàng khi màn hình nhỏ */
 }
+
 .modal-image {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Để logo căn giữa theo ảnh */
+    align-items: center;
 }
+
 .modal-image img {
     max-width: 300px; /* Giới hạn kích thước ảnh */
     width: 100%;
@@ -167,25 +169,42 @@ article p {
 }
 
 .modal-text {
-    flex: 1; /* Để phần chữ chiếm khoảng trống còn lại */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Để chữ nằm giữa ảnh */
 }
 
 .modal-text h2 {
     margin-top: 0;
 }
+
 .logo-container {
     display: flex;
-    justify-content: center; /* Căn logo theo chiều ngang */
-    gap: 10px; /* Khoảng cách giữa các logo */
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
 }
+
 .main .logo {
-    width: 30px; /* Kích thước logo */
+    width: 30px;
     height: 30px;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Tạo hiệu ứng khi di chuột */
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-/* Hiệu ứng khi di chuột vào logo */
+
 .main .logo:hover {
-    transform: scale(1.2); /* Phóng to logo khi di chuột */
-    filter: brightness(1.5); /* Tăng độ sáng khi di chuột */
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+/* Responsive - điều chỉnh khi màn hình nhỏ */
+@media (max-width: 650px) {
+    .modal-body {
+        flex-direction: column; /* Chuyển ảnh và chữ xuống hàng khi màn hình nhỏ */
+        align-items: center;
+    }
+
+    .modal-image img {
+        max-width: 300px; /* Giới hạn kích thước ảnh nhỏ hơn */
+    }
 }
