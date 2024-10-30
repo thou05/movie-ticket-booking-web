@@ -91,6 +91,8 @@ img{
     color: #fff;
     font-size: 1.15rem;
     font-weight: 600;
+    white-space: nowrap;
+
     transition: color 0.25s ease-in-out;
     -webkit-transition: color 0.25s ease-in-out;
     -moz-transition: color 0.25s ease-in-out;
