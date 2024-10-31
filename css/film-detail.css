@@ -854,7 +854,7 @@ h5.movie-content{
 @media(max-width: 480px){
     .header .logo {
         position: relative;
-        left: -25%;
+        left: -5%;
     }
     .header .logo h1{
         font-size: 1.8rem;
