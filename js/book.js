@@ -1316,17 +1316,5 @@ let resetComboInputs = () => {
 };
 
 document.getElementById('back_ticket').addEventListener('click', () => {
-    document.getElementById('screen').style.display = 'inline-block';
-    document.getElementById('chair').style.display = 'block';
-    document.getElementById('det').style.display = 'flex';
-    document.getElementById('book_ticket').style.display = 'unset';
-    document.getElementById('back_ticket').style.display = 'none';
-    document.getElementById('ticket').style.display = 'none';
-    document.getElementById('ticket').innerHTML = '';
-    offDate();
-    offTime();
-    document.getElementById('chair').innerHTML = '';
-    document.getElementById('book_ticket').style.display = 'none';
-    isDateSelected = false;
-    resetComboInputs();
-})
+    window.location.href = '../html/home.html';
+});
